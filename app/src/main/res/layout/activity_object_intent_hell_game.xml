@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Object_Intent_Hell_Game"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/hell_game"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#2B2B2B"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hell Game(악마 야바위꾼)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/object_hell_game"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="리펜던스에 추가된 야바위꾼 거지의 악마 버전. 알트 아자젤로 메가 사탄을 클리어하면 언락된다. 악마 거지이니 돈 대신 하트 반 칸을 줘야 하며, 픽업 아이템은 일반 야바위꾼과 비슷하지만 하트가 블랙 하트로 대체되었고, 카드를 제공할 확률이 있다. 틀릴 경우에는 파리 대신 거미가 스폰된다. 실패/성공이 정해져 있는 것과, Lucky Foot으로 확률을 높일 수 있는 것은 동일. 간혹 악마방 배열 아이템을 제시할 때가 있는데, 이 때 맞추면 그 악마방 아이템을 제공하고 사라진다. 폭탄으로 죽일 경우 악마 거지처럼 거미 2마리가 스폰된다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

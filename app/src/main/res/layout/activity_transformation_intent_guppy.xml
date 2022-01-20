@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transformation_Intent_Guppy"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/guppy"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#474545"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guppy(구피)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/transformation_guppy"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="오리지널에 유일하게 있던 변신세트로 구피 관련 아이템을 3개 이상 획득 시 변신한다. 날아다닐 수 있으며 공격이 명중할 때마다 50%의 확률로 데미지 2배의 아군 파리를 생성한다. Epic Fetus와 Mom's Knife에는 적용되지 않는다. 그러나 리펜턴스로 넘어오면서 Mom's Knife에는 적용이 잘 된다"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="세트 관련 아이템"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Dead Cat(죽은 고양이)\nGuppy's Collar(구피의 목걸이)\nGuppy's Hairball(구피의 털뭉치)\nGuppy's Head(구피의 머리)\nGuppy's Paw(구피의 발)\nGuppy's Tail(구피의 꼬리)\nGuppy's Eye(구피의 눈)\nKid's Drawing(어린이 그림)"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

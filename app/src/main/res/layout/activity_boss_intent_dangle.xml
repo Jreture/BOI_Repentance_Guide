@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Boss_Intent_dangle"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/dangle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#815E29"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dangle (댕글)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </TextView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/boss_dangle"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="등장 장소"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:text="보스 방(단독) - Basement/Burning Basement\n보스 방(Double Trouble) - Necropolis/Womb, Womb/Utero/Scarred Womb\nChest"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Dingle의 변형 보스이자 거대한 옥수수 똥. Dingle과 마찬가지로 Butt Bombs 사용 시 체력을 회복하고, Flush!를 사용하면 즉사시킬 수 있다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="해금조건"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Chest 스테이지의 보스 ???를 각기 다른 캐릭터 3명으로 격파"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보스 체력 및 패턴"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="* 체력 : 375 (100% / +0)\n* 패턴 1 : 휘파람을 분 뒤 Brownie Corn 1~3마리를 아이작을 향해 발사하며 그 직후 아이작을 향해 3발의 옥수수탄을 발사한다.\n* 패턴 2 : 해실거리는 표정을 지은 뒤 아이작을 향해 3발의 옥수수탄을 발사한다.\n* 패턴 3 : 볼을 부풀리는 표정을 지은 뒤 아이작을 향해 초록 방귀와 함께 미끄러운 장판을 깔면서 2단 돌진을 한다. 돌진 이후 벽에 부딪치면 Gurdy Jr처럼 튕겨나오니 주의. 2단 돌진 이후엔 잠깐 숨을 몰아쉬며 무방비 상태가 된다.\n* 패턴 4 : 패턴 3 시전 시 확률적으로 옥수수 지뢰를 설치하는데 설치하자마자 본인이 밟아서 바로 터지기 때문에 방사형으로 옥수수탄 8발이 발사되며 Dangle은 독에 중독되며 초록색 장판을 깔면서 돌진한다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

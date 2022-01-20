@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Card_Rune_PillsIntent_The_Fool"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/the_high_priestessr"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#A600BCD4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="II - The High Priestess (여교황)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/card_the_high_priestess"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID : 3"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="습득 시 대사 : Mother is watching you"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blank Card 쿨타임 : 2"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="엄마의 발이 적을 향해서 떨어지며 300의 폭발성 피해를 입힌다.\n몹이 여러마리 있을때는 체력이 가장 많은 적에게 떨어진다.\n엄마와 싸우거나 적이 없는 상태에서 사용하면 무조건 아이작을 향해 떨어진다.\nMonstro's Tooth 아이템과 비슷한 효과인데 훨씬 강하다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

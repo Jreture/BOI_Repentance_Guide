@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transformation_Intent_Leviathan"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/leviathan"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#333232"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leviathan(레비아탄)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/transformation_leviathan"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="악마 관련 아이템을 3개 이상 획득 시 변신한다. 날아다닐 수 있으며 블랙하트를 3개 얻는다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="세트 관련 아이템"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Abaddon(아바돈)\nBrimstone(유황)\nThe Mark(낙인)\nMaw of the Void(공허의 구렁텅이)\nThe Nail(대못)\nThe Pact(계약)\nPentagram(오망성)\nSpirit of the Night(밤의 영혼)\nSulfur(황)\nLord of the Pit(구덩이의 제왕)\nEye of the Occult(오컬트의 눈)"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

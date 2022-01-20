@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Object_Intent_Battery_Bum"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/battery_bum"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#775454"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Battery Beggar(전지 거지)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/object_battery_bum"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="리펜던스에 추가된 거지. 돈을 주다 보면 게이지를 최대 2회분까지 1~3칸 채워주거나 배터리 픽업을 드랍하며, 낮은 확률로 배터리 관련 장신구를, 매우 낮은 확률로 패시브 아이템을 주고 사라진다. 다른 거지들보다 패시브 아이템 제공 확률이 확연히 낮다. 전지 거지 배열은 게이지 관련 템으로만 구성되어 있으며 추가로 Glaucoma도 나올 수 있다.\n\n패시브 아이템을 주고 떠날 때까지 거래를 했을 경우 장신구 Charged Penny가 언락되며, 10명 죽였을 경우 장신구 Old Capacitor가 언락된다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

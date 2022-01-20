@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Character_Intent_lilith"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/lilith"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#3C3939"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LILITH(릴리스)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/character_lilith"
+        android:background="#DF371111"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="캐릭터 설정"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="· 체력 : 빨간하트 1개, 블랙하트 2개\n· 공격력 :3.5 (* 1)\n· 공격 속도 : 2.73\n· 탄속 : 1\n· 사거리 : 6.5\n· 이동 속도 : 1\n· 운 : 0\n· 고유 능력 :기본 공격 불가, Incubus(악몽)\n· 기본 소지 픽업 : 없음\n· 기본 소지 아이템 : Box of Friends(친구 상자), Cambion Conception(몽마의 자식들)\n· 캐릭터 해금 방법 : 아자젤로 탐욕 모드 클리어\n· 생득권 효과 : 공격적 위치 - 특정 패밀리어들을 제외한 패밀리어들의 위치가 캐릭터의 공격 방향 바로 앞으로 고정됨"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="관련 해금 요소"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="추후 생성"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

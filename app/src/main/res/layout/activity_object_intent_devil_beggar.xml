@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Object_Intent_Devil_Beggar"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/devil_beggar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#1E1E1E"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Devil Beggar(악마 거지)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/object_devil_beggar"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="캐릭터의 체력으로 표시된 하트를 요구하는 거지. XIV - Temperence 카드에서 등장할 때도 있다. 한 번의 거래에 체력 반 칸(Womb 이후로는 1칸)을 요구하는데, 거래 대미지로 인한 무적 시간 동안 한 번의 체력 소모로 거래를 두 번 할 수 있다. 무작위 알약, 장신구, 카드를 주며, 역시 하트를 주다보면 액티브 / 패시브 아이템을 주고 사라진다. 악마 거지 배열은 주로 주사기 아이템, 알약 아이템, 악마방 아이템으로 구성되어 있다.\n\n폭탄으로 죽일 경우 천사방 확률이 25% 증가하며, 아이템을 주고 떠날 때까지 거래했다면 그 층의 보스를 처치 후 방문이 열리는 확률 계산에서 가장 먼저 10% 확률로 악마방이 등장한다. 이 확률은 악마방과 천사방의 확률 계산 이전에 계산하는것이기 때문에 이 10% 확률이 실패한 다음에야 스탯에 표시된 악마방/천사방의 확률을 계산한다.\n\n리펜턴스에서는 피격 후 무적 시간에는 아예 거래가 되지 않게 바뀌면서 이를 이용해 거래를 여러 번 할 수 있는 꼼수가 막혔고, 폭탄으로 죽이면 무조건 빨간 거미만 나온다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

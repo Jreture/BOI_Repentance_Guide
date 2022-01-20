@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mini_Boss_Intent_Lust"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/lust"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#954FA8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lust(색욕)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/mini_boss_lust"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="등장 장소"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="Lust - 미니 보스방, Womb/Utero/Scarred Womb, Sheol, Chest/Dark Room"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="얼굴이 곰보인 것을 보아 매독 같은 성병에 걸린 사람을 묘사한 듯하다. Gemini나 War 2페이즈를 상대하듯이 맵을 빙빙 돌면서 공략하면 된다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="보스 체력 및 패턴"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text=" 체력 : 60 (+20)\n· 패턴 1 : 플레이어를 향해 빠르게 달려든다. 한 방향으로 움직일수록 이동 속도가 상승하고, 눈물에 의한 넉백이 줄어든다. 접촉 시 하트 한 칸의 피해를 입힌다.\n· 처치 시 무작위 알약 또는 낮은 확률로 The Virus를 드랍한다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

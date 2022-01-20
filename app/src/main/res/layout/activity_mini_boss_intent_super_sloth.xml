@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mini_Boss_Intent_Super_Sloth"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/super_sloth"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#033013"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Super Sloth(강력한 나태)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/mini_boss_super_sloth"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="등장 장소"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="Super Sloth - 미니 보스방, Corpse, Chest/Dark Room"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Globin 시리즈 몬스터와 비슷하게 생겼다. 여담이지만 나태는 Globin 이라는 몬스터에서 색상만 변경한 것으로, 새로운 보스를 디자인하기 귀찮았던 개발자의 나태를 그대로 표현하고 있다."
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="보스 체력 및 패턴"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="* 체력 : 60 (+25)\n· 패턴 1 : 아이작을 향해 구토제 폭탄 2개를 발사한다.\n· 패턴 2 : 아이작을 향해 Big Spider 1마리나 Spider 2마리를 뱉는다.\n· 처치 시 카드, 룬 또는 낮은 확률로 Bob's Curse를 드랍한다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

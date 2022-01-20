@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Boss_Intent_dingle"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/dingle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#D54E2828"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dingle (딩글)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/boss_dingle"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="등장 장소"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="보스 방(단독) - Basement/Burning Basement\n보스 방(Double Trouble) - Caves/Catacombs, Womb\nBasement(Home 루트), Depths/Necropolis/Dank Depths, Womb/Utero/Scarred Womb, Cathedral, Chest"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="거대한 똥 형태의 보스. Dip 계열 몬스터의 최종 형태이다. 패턴을 읽기 위해 보스의 표정을 봐가는 플레이가 필요하다.\nButt Bombs/No.2를 획득한 상태나 [알트 ???] 캐릭터라면 주의할 점이 있는데, 똥 폭탄으로 이 녀석을 공격하면 오히려 체력을 회복한다! 반대로 Flush!를 사용하면 즉사시킬 수 있다. 이는 모든 똥 계열 보스가 공통적으로 적용된다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="보스 체력 및 패턴"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="일반형\n* 체력 : 300 (100% / +0)\n* 패턴 1 : 휘파람을 분 뒤 Dip 1~3마리를 소환하며 아이작을 향해 3개의 똥 방울을 발사한다.\n* 패턴 2 : 헤실거리는 표정을 지은 뒤 아이작을 향해 3개의 똥 방울을 발사한다.\n* 패턴 3 : 볼을 부풀리는 표정을 지은 뒤 아이작을 향해 3단 돌진을 한다. 돌진 이후 벽에 부딪치면 Gurdy Jr처럼 튕겨나오니 주의. 3단 돌진 이후엔 잠깐 숨을 몰아쉬며 무방비 상태가 된다. 돌진 시작시 일정 확률로 똥을 싼다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#74FF0000"
+                android:text="빨간색 보스"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="* 체력 : 300 (100% / +0)\n* 패턴 1 : 휘파람을 분 뒤 근처에 빨간 똥을 소환하며 아이작을 향해 3개의 핏방울을 발사한다.\n* 패턴 2 : 헤실거리는 표정을 지은 뒤 아이작을 향해 3개의 핏방울을 발사한다.\n* 패턴 3 : 볼을 부풀리는 표정을 지은 뒤 아이작을 향해 네 번 돌진을 한다. 돌진 이후 벽에 부딪치면 Gurdy Jr처럼 튕겨나오니 주의. 4단 돌진 이후엔 잠깐 숨을 몰아쉬며 무방비 상태가 된다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#B23F4042"
+                android:text="검은색 보스"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="* 체력 : 300 (100% / +0)\n* 패턴 1 : 휘파람을 분 뒤 Spider를 1~2마리 소환하고 8방향으로 똥 방울을 뱉는다.\n* 패턴 2 : 헤실거리는 표정을 지은 뒤 8방향으로 똥 방울을 뱉는다.\n* 패턴 3 : 볼을 부풀리는 표정을 지은 뒤 아이작을 향해 매우 빠른 속도로 돌진을 한다. 돌진 이후 벽에 부딪치면 Gurdy Jr처럼 튕겨나오니 주의. 돌진 이후엔 잠깐 숨을 몰아쉬며 무방비 상태가 된다."
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

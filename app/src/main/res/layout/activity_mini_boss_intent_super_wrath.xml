@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mini_Boss_Intent_Super_Wrath"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/super_wrath"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#3A3838"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Super Wrath(강력한 분노)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/mini_boss_super_wrath"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="등장 장소"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="Super Wrath - 미니 보스방, Sheol/Cathedral, Chest/Dark Room"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="등장하는 방의 디자인이나, 공격하는 패턴, 생긴 모습이 딱 이 캐릭터다.\n소환하는 폭탄은 공격으로 튕겨내거나 몸으로 밀어서 Wrath에게 피해를 입히게 할 수 있다.\nWrath와 Super Wrath 둘 다 폭탄 대미지를 일부 흡수한다. 그러거나 말거나 폭탄 던져놓고 그 옆에 가만히 서있는 인공지능은 여전해서 일반버전은 쉽다.\n아이작의 폭탄과 페투스 계열 폭탄에는 고정 200 대미지를 입는다. 때문에 Epic Fetus로 아이작이나 ???를 한 방에 보낼 수 있는 수준의 공격력이라도 이 녀석을 한 방에 못 보내는 경우도 있다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="보스 체력 및 패턴"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text=" 체력 : 60 (+30)\n· 패턴 1 : 방을 일정한 규칙 없이 돌아다닌다. 접촉 시 하트 한 칸의 피해를 입힌다.\n· 패턴 2 : 아이작이 근처에 있으면 아이작을 향해 슈퍼 트롤 폭탄을 던지며 자신은 폭탄에서 멀어진다. 하트 한 칸의 피해를 입힌다.\n· 본인은 이 폭탄에 맞아도 기존의 100이 아닌 20 대미지만 받는다.\n· 처치 시 폭탄 여러 개 또는 낮은 확률로 Mr.Mega를 드랍한다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

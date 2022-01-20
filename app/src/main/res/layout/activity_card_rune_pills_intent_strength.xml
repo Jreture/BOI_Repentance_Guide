@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Card_Rune_PillsIntent_The_Fool"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/strength"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#AA6E6E"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XI - Strength (힘)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/card_the_hermit"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID : 12"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="습득 시 대사 : May your power bring rage"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blank Card 쿨타임 : 3"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="현재방에서만 Magic Mushroom 아이템 효과(최대체력 1칸, 데미지 0.5, 사거리 5.25, 공속 0.3, 눈물 높이 0.5 증가,공격력 1.5배,캐릭터 사이즈 증가)를 얻는다.\nMagic Mushroom 아이템을 가지고 있거나 한번더 사용했을경우엔 공격력 1.5배를 제외하곤 중첩이 가능하다.\n방을 벗어나면 늘어난 체력도 줄어드는데, ??? 캐릭터의 경우에도 소울하트 1칸이 감소한다.\n??? 캐릭터를 제외하고 빨간 하트 체력 없이 소울/블랙 하트만 남았을 때 사용 후, 가지고 있는 소울/블랙 하트를 전부 소진 후 방을 이탈하면 사망하지 않고 빨간 하트 체력이 그대로 남아있는다.\n체력이 꽉 찬 상태에서 쓰면 빨간 하트가 늘어난 것 때문에 소울하트나 이블하트가 사라질 수 있으며, 빨간 하트를 하나 채우고 체력 하나를 늘리는 방식이라 다음 방으로 가도 빨간 하트가 채워진 건 무효화되지 않는다.\n소울/이블 하트만 있는 상태에서 이 카드를 써서 생긴 빨간 하트로 악마방이나 미트볼을 만든 후 방을 나온다고 대신 소울/이블 하트를 빼앗기지 않는다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

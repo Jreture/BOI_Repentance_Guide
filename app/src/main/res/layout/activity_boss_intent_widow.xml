@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Boss_Intent_widow"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/widow"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#6E4B4B"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Widow (과부)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/boss_widow"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="등장 장소"
+                android:textColor="#E2420808"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="보스 방(단독) - Cellar\nBasement(Home 루트), Utero/Scarred Womb, Cathedral, Chest/Dark Room"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="left"
+                android:text="거대한 거미의 형상을 한 보스. 소환하는 몬스터들은 놔두면 보스에게 깔려 죽으므로 별로 걱정할 필요 없이 보스에 집중하는 게 좋다. 또한 이것을 이용해서 보스를 유인한 다음 잡몹 처리가 가능하다.\n초반 보스 치고는 꽤 난이도가 있는 편인데, 초심자들은 괜히 소환되는 작은 거미들 때문에 우왕좌왕하다 맞아죽는 경우가 많다. 하얀 고치 주변으로 보스가 점프하도록 유도하는 전법이 가장 효율적이다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="보스 체력 및 패턴"
+                android:textColor="#E2420808"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="left"
+                android:text="일반형\n* 체력 : 130 (100% / +0)\n* 패턴 1 : 점프해서 내려찍기 공격을 계속해온다. 생각보다 도약 속도가 빠르고 도약 중에는 접촉 판정이 없기 때문에 보스에 가까이 붙어 있는 것이 좋다.\n* 패턴 2 : Spider를 뱉는다.\n* 패턴 3 : Sack을 낳으면서 밟으면 느려지는 하얀 장판을 생성한다. Sack이 이미 3마리 이상 있을 경우 하얀 장판만 생성한다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="left"
+                android:textColor="#65FF00DE"
+                android:text="핑크색 보스"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="left"
+                android:text="* 체력 : 130 (100% / +0)\n* 크기가 작아졌다.\n* 패턴 1 : 점프해서 내려찍기 공격을 계속해온다. 일반형에 비해 점프 속도가 빠르다.\n* 패턴 2 : Attack Fly 2마리를 뱉는다.\n* 패턴 3 : Boil을 낳으면서 밟으면 느려지는 하얀 장판을 생성한다. Boil이 이미 3마리 이상 있을 경우 하얀 장판만 생성한다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="left"
+                android:textColor="#B23F4042"
+                android:text="검은색 보스"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="left"
+                android:text="* 체력 : 130 (100% / +0)\n* 패턴 1 : 점프해서 내려찍기 공격을 계속해온다.\n* 패턴 2 : 6방향으로 핏방울을 뿌린다.\n* 패턴 3 : Big Spider를 낳으면서 밟으면 느려지는 검은 장판을 생성한다."
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

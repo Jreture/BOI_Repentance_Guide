@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Room_Intent_Treasure_Room"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/treasure_room"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#E8B211"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Treasure Room(보물 방)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/room_treasure_rooms"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="명 황금방. 지도 상에서 황금 왕관으로 표시된다. 챕터3인 depth 스테이지까지만 볼 수 있다.\n\n아이템이 하나 나오기 때문에 다른 건 다 지나치더라도 꼭 들러야 하는 곳. 첫 층에서만 열려 있고 이후에는 항상 잠겨있기 때문에, 열쇠 하나 정도는 챙겨두자. 비밀방이 옆에 붙어 있을 가능성이 있으므로 열쇠는 없는데 폭탄에 여유가 있다면 한번 탐색해 보자."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="버전별 변경점"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="오리지널 이터널 에디션\n· 첫 레벨에서 저주 Curse of the Labyrinth에 걸리는 경우, 이터널 에디션에서는 둘 중 한 곳은 열려 있다.\n\n리버스\n· 지도 상에서 막다른 곳 중 시작 지점에서 네 번째로 먼 방이 보물 방으로 지정된다.\n· 첫 레벨에서 Curse of the Labyrinth에 걸리는 경우에도 둘 다 열쇠 소모를 하지 않고 바로 열린다.\n\n애프터버스\n· 아이템이 2개가 놓일 가능성이 생겼다. 확률은 매우 희박하다. 단 Golden Horse Shoe장신구를 가지고 있으면 보물방에 입장할 경우 15% 확률로, More options를 가지고 있으면 100% 확률로 2개가 생성된다. 그러나 두 개 다 먹을 수 있는 방은 없다.\n· 리스톡 기계가 있는 아이템 방이 추가되었다. 기계에 동전을 1~5개 넣거나 폭탄을 사용하면 터질때까지 아이템을 바꿀 수 있다.\n\n애프터버스+\n· Greed gaper가 2~3마리 있는 아이템 방이 추가되었다. 생각 없이 열자마자 돌진하면 피격당할 수 있으니 주의. 아이템을 먹는 속도보다 쫓아오는 것이 더 빠르니 그냥 잡고 먹어주는 것이 좋다.\n· 낮은 확률로 보물방 아이템을 2개 다 먹을 수 있는 아이템 방이 추가되었다. 이 방은 주변에 8개의 항아리 오브젝트가 있다. 그리고 더 낮은 확률로 아이템 대신 똥 오브젝트와 픽업템 몇 개가 놓여 있는 방도 생겼다.\n· 새롭게 추가된 장신구인 Bloody Crown을 가지고 있으면 챕터4에서도 아이템 방이 생긴다.\n· 새롭게 추가된 아이템인 moving box를 이용해 2개 중 하나를 선택하는 아이템도 둘다 먹을 수 있게 되었다. 방법은 간단하게도 아이템 방에서 moving box 아이템을 두 번 쓰면 된다. 이 방법은 천사방에서도 통한다.\n\n리펜턴스\n· 애프터버스+에 있던 Greed gaper가 삭제되었고, 신규 몬스터인 Bulb가 추가되었다.\n· 선택형 상태가 유지되도록 변경되었다. 더 이상 Moving box를 이용하여 둘 다 먹는 것이 불가능해졌다. 이는 천사 방, 보스 러시도 동일.\n· 신규 루트의 보물방은 무조건 아이템이 2개가 있는 선택형이지만, 둘 중의 하나는 Curse of the Blind에 걸린 것처럼 무슨 아이템인지 볼 수 없다. Black Candle이 있거나 Dagaz를 써도 무엇인지 알 수 없다.\n· 신규 장신구 'Devil's Crown' 소지 시 악마 보물 방으로 변한다. 기존 무료로 주던 보물 방 아이템 대신 악마 방 아이템을 생명력으로 팔고 있으니 악마 방으로 변한 보물 방으로 생각하면 된다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

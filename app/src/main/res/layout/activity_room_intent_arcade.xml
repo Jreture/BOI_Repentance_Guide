@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Room_Intent_Arcade"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/arcade"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#432929"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arcade(오락실)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/room_arcade"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="일명 아케이드방. 지도에서 붉은 주사위로 표시된다.\n\n코인 5개 이상을 가지고 짝수번째 스테이지(XL스테이지 포함)입장시 일정 확률으로 생성된다.\n\n입장할때 동전 1개를 내야한다. 열쇠가 아니다! 들어가면 슬롯 머신, 헌혈 기계, 야바위꾼이 있다.(가끔 슬롯머신 대신에 점치는기계가 있을때도 있다.(DLC 한정)) 보통 2~3개 정도 있지만, 가끔 10개가 빼곡히 놓여있을 때도 있다.\n\n야바위꾼은 오락실에서만 나오며 Skatole은 야바위꾼에게서만 얻을 수 있다. Skatole을 얻으면 야바위꾼은 사라진다. 돈이 부족하면 헌혈 기계에서 체력을 돈으로 바꿀 수 있고 그 돈으로 도박하다보면 슬롯 머신, 야바위꾼이 하트를 내놓기도 하므로 하트->돈->하트->돈 하는 식으로 계속 도박 하는 것도 가능. 물론 운이 좋아야 한다. Lucky foot이 있으면 확실히 도박할때 좋다. 도박이 귀찮고 폭탄 여유분이 있다면 모조리 터뜨려서 아이템을 얻자. Womb 레벨 가면 상점도 없고 아이템 방도 없으므로 오락실이 매우 중요해진다. 주의할 건 원래 헌혈 기계 사용할때 하트 반개가 필요하지만 Womb 레벨에서는 한번 쓸때마다 하트 1개씩 없어진다는 것. 이건 Womb레벨에서부턴 무조건 하트 1개씩 데미지를 입히도록 되어있기 때문이다. 하지만 하트 1칸짜리 데미지의 무적시간이 반칸짜리보다 조금 더 긴데 1칸짜리의 무적시간이 헌혈 딜레이 보다 길어서 한번의 데미지로 두번 헌혈이 가능하기 때문에 1칸으로 헌혈 두번은 변함이 없다.\n\n여담으로 이 방의 벽을 보면 제작자 에드먼드가 참여했던 게임들의 포스터가 걸려 있는 것을 볼 수 있다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="버전별 변경점"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="리버스\n· 지도 상에서 조이스틱으로 표시되며, XL 스테이지에서는 더 이상 등장하지 않는다. 악마거지, 열쇠거지, 평범한 거지가 함께 있거나 기부하는 기계 하나와 슬롯머신, 헌혈기가 서로 랜덤하게 놓여있는 방이 나온다. 헌혈기가 2개 놓여있거나 하는 상황도 가능하다. 또한 야바위꾼 역시 오락실에서 뿐만 아니라 다른 몬스터가 없는 방에도 떡하니 있거니 하는 상황도 있을 수 있다.\n\n리펜턴스\n· 리펜턴스의 추가 스테이지에서는 기존과 반대로 홀수번째 스테이지에서만 등장한다. XL 스테이지 역시 리펜턴스 추가 스테이지의 XL 스테이지에서만 등장한다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

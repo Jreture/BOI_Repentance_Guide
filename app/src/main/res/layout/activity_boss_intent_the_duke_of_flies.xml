@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Boss_Intent_the_duke_of_flies"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/the_duke_of_flies"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#775B5B"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Duke of Flies (파리 공작)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/boss_the_duke_of_flies"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="등장 장소"
+                android:textColor="#E2420808"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="보스 방(단독) - Basement/Burning Basement\n보스 방(Double Trouble) - Caves/Catacombs/Flooded Caves\nBasement(Home 루트), Depths/Necropolis/Dank Depths, Womb/Utero/Scarred Womb, Cathedral, Chest"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="left"
+                android:text="입에 파리가 들끓는 괴물. 이름이나 입에 파리가 있는 것을 봐서 윌리엄 골딩의 소설 '파리 대왕'인듯.방 전체를 대각선 방향으로 느리게 돌아다닌다. 공격력이나 공격속도가 낮을 경우 잡기 아주 귀찮은 보스인데, 파리를 소환하는 패턴 때문에 공격하는 족족 막히기 때문. 여러번 플레이하면서 어느 타이밍에는 파리를 잡고 어느 타이밍에 보스를 칠지 경험으로 익히는게 편하다. 다행히 체력은 110으로, 보스치고는 매우 낮기 때문에 폭탄을 잘 쓰면 쉽게 처치할 수 있다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="보스 체력 및 패턴"
+                android:textColor="#E2420808"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="left"
+                android:text="일반형\n* 체력 : 110 (100% / +0)\n* 패턴 1 : Attack Fly 3마리 소환, 자신의 주위에 돌게 하여 공격을 막아낸다.\n* 패턴 2 : Attack Fly가 4~6마리 이상 자신의 주위를 돌 경우 숨을 내뿜어 파리가 주위로 흩어지게 한다.\n* 패턴 3 : 약간 더 크고 강한 Attack Fly를 소환한다.\n* 사망 시 Fly 계열의 몬스터를 여러 마리 남긴다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="left"
+                android:textColor="#A34CAF50"
+                android:text="초록색 보스"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="left"
+                android:text="* 체력 : 110 (100% / +0)\n* 패턴 1 : Attack Fly 3마리 소환, 자신의 주위에 돌게 하여 공격을 막아낸다.\n* 패턴 2 : Attack Fly가 4~6마리 이상 자신의 주위를 돌 경우 숨을 내뿜어 파리가 주위로 흩어지게 한다. 숨을 내뿜을 때 8방향으로 핏방울도 같이 발사한다.\n* 패턴 3 : Moter를 소환한다.\n* 패턴 4 : 핏방울을 8방향으로 발사한다.\n* 사망 시 Fly 계열의 몬스터를 여러 마리 남긴다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="left"
+                android:textColor="#85FF5722"
+                android:text="주황색 보스"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="left"
+                android:text="* 체력 : 137.5 (125% / +0)\n* 패턴 1 : Attack Fly 3마리 소환, 자신의 주위에 돌게 하여 공격을 막아낸다.\n* 패턴 2 : Attack Fly가 4~6마리 이상 자신의 주위를 돌 경우 숨을 내뿜어 파리가 주위로 흩어지게 한다.\n* 패턴 3 : Sucker를 소환한다.\n* 사망 시 Fly 계열의 몬스터를 여러 마리 남긴다."
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

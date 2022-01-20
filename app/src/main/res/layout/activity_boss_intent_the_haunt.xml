@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Boss_Intent_the_haunt"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/the_haunt"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#878080"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Haunt (유령)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/boss_the_haunt"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="등장 장소"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="보스 방(단독) - Cellar\n보스 방(Double Trouble) - Depths/Necropolis/Dank Depths\nDepths/Necropolis/Dank Depths, Womb/Utero/Scarred Womb, Sheol/Cathedral, Chest/Dark Room"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="망령 형태의 보스. 1차 형태는 얼핏 보기에 귀여워 보이지만, 2차 형태가 되면 제법 충격적인 반전을 보여주는 보스다. 초반 보스치고는 은근히 패턴이 까다롭다.\n여담으로 안티버스에서는 Downpour에도 등장하였으나 정식 편입 때 제외되었다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="보스 체력 및 패턴"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="일반형\n* 체력 : 200 (100% / +0)\n* 전투 시작 시 The Haunt는 반투명한 상태로 방 안을 천천히 날아다니는데, 이때는 The Haunt를 공격할수 없으며, 닿으면 하트 한 개분의 피해를 입는다.\n  · 패턴 1 : 자신의 주변에 위치한 Tiny Haunt 3마리를 1마리, 2마리씩 2차례에 걸쳐 풀어놓는다. 활성화된 Tiny Haunt는 Depths/Necropolis/Dank Depths에서 보이는 작은 유령들과 같은 패턴. 다시 말해 플레이어의 이동 동작을 그대로 따라하면서 쫓아온다. 그래서 뒷걸음질치면 더 빠르게 쫓아오므로 주의. 그러면서 간헐적으로 핏방울 1개를 발사한다.\n* 모든 Tiny Haunt를 처치할 경우 The Haunt는 자기 얼굴 가죽을 벗어 머리뼈를 드러내며 2페이즈로 돌입한다. 이후 The Haunt는 맵 최상단으로 올라가 좌우로만 움직이며, 보스의 체력바가 화면 하단으로 내려온다.\n  · 패턴 1 : 약간의 지연시간을 거친 뒤 전방으로 혈사포를 발사한다.\n  · 패턴 2 : 전방으로 5way의 핏방울을 발사한다. 전조 동작이 없기 때문에 여차하면 맞을 수 있다.\n  · 패턴 3 : 아이작이 The Haunt의 좌우에 있을 경우 순간적으로 빠르게 돌진한다. 맞을 시 하트 한 개분의 피해를 입는다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#65FF00DE"
+                android:text="핑크색 보스"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="* 체력 : 100 (50% / +0)\n* 전투 시작 시 The Haunt는 반투명한 상태로 방 안을 천천히 날아다니는데, 이때는 The Haunt를 공격할수 없으며, 닿으면 하트 한 개분의 피해를 입는다.\n  · 패턴 1 : 자신의 주변에 위치한 Tiny Haunt 1마리를 풀어놓는다. 활성화된 Tiny Haunt는 Depths/Necropolis/Dank Depths에서 보이는 작은 유령들과 같은 패턴. 다시 말해 플레이어의 이동 동작을 그대로 따라하면서 쫓아온다. 그래서 뒷걸음질치면 더 빠르게 쫓아오므로 주의. 그러면서 간헐적으로 핏방울 1개를 발사한다.\n* 모든 Tiny Haunt를 처치할 경우 The Haunt는 자기 얼굴 가죽을 벗어 머리뼈를 드러내며 2페이즈로 돌입한다. 이후 The Haunt는 맵 최상단으로 올라가 좌우로만 움직이며, 보스의 체력바가 화면 하단으로 내려온다.\n  · 패턴 1 : 약간의 지연시간을 거친 뒤 벽에 두갈래로 튕기는 혈사포를 발사한다![6]\n  · 패턴 2 : 핏방울 8개를 아이작의 방향으로 차례대로 발사한다.\n  · 패턴 3 : 아이작이 The Haunt의 좌우에 있을 경우 순간적으로 빠르게 돌진한다. 맞을 시 하트 한 개분의 피해를 입는다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#B23F4042"
+                android:text="검은색 보스"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="* 체력 : 200 (100% / +0)\n* 전투 시작 시 The Haunt는 반투명한 상태로 방 안을 천천히 날아다니는데, 이때는 The Haunt를 공격할수 없으며, 닿으면 하트 한 개분의 피해를 입는다.\n  · 패턴 1 : 자신의 주변에 위치한 Tiny Haunt 2마리를 풀어놓는다. 활성화된 Tiny Haunt는 Depths/Necropolis/Dank Depths에서 보이는 작은 유령들과 같은 패턴. 다시 말해 플레이어의 이동 동작을 그대로 따라하면서 쫓아온다. 그래서 뒷걸음질치면 더 빠르게 쫓아오므로 주의. 그러면서 간헐적으로 핏방울 1개를 발사한다.\n* 모든 Tiny Haunt를 처치할 경우 The Haunt는 자기 얼굴 가죽을 벗어 머리뼈를 드러내며 2페이즈로 돌입한다. 이후 The Haunt는 맵 최상단으로 올라가 좌우로만 움직이며, 보스의 체력바가 화면 하단으로 내려온다.\n  · 패턴 1 : 약간의 지연시간을 거친 뒤 Spider를 1~2마리 뱉는다.\n  · 패턴 2 : 전방으로 5way의 핏방울을 발사한다. 전조 동작이 없기 때문에 여차하면 맞을 수 있다.\n  · 패턴 3 : 아이작이 The Haunt의 좌우에 있을 경우 순간적으로 빠르게 돌진한다. 맞을 시 하트 한 개분의 피해를 입는다."
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

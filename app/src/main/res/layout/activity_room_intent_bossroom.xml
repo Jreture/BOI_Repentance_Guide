@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Room_Intent_Bossroom"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/bossroom"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#535353"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BossRoom(보스 방)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/room_bossroom"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="지도 상에서 큰 해골 모양으로 표시된다. 전 레벨 공통으로 존재하며 지도 상에서 막다른 곳 중 시작 지점에서 가장 먼 방이 보스 방으로 지정된다.\n\n다음 레벨로 진행 or 엔딩을 보기 위해선 거쳐야 한다. 보스와 싸우지 않고 다음 레벨로 넘어가는 방법이 있지만 보스가 드랍하는 아이템도 중요하다는 걸 잊지 말자. 등장하는 보스는 랜덤이지만 한번 정해지면 바뀌지 않는다. 다만 forget me now 아이템을 사용할 경우 바뀌기도 한다.(변종으로 바뀔 수도 있다.)\n\n보스 방에서 등장하는 아이템은 모두 패시브 아이템이고, 대체로 능력치 증가 아이템이 많다. 굉장한 효율을 자랑하는 레어 아이템은 볼드체로 표기해놓는다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="버전별 변경점"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="리펜턴스 이후\n· 1×2나 2×1 같은 좁은 구조의 보스 방이 전부 삭제되었다. 가뜩이나 피하기 힘든 보스가 나왔는데 방까지 좁으면 대놓고 맞으란 소리였으니 당연한 패치."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

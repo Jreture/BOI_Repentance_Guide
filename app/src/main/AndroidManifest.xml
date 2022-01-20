@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.boi_repentance_guide">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BOI_repentance_guide">
+        <activity
+            android:name=".Trinket_Intent_Wiggle_Worm"
+            android:exported="false" />
+        <activity
+            android:name=".Trinket_Intent_Swallowed_Penny"
+            android:exported="false" />
+        <activity
+            android:name=".Trinket_Intent_Rosary_Bead"
+            android:exported="false" />
+        <activity
+            android:name=".Trinket_Intent_Purple_Heart"
+            android:exported="false" />
+        <activity
+            android:name=".Trinket_Intent_Pulse_Worm"
+            android:exported="false" />
+        <activity
+            android:name=".Trinket_Intent_Petrified_Poop"
+            android:exported="false" />
+        <activity
+            android:name=".Trinket_Intent_Cartridge"
+            android:exported="false" />
+        <activity
+            android:name=".Trinket_Intent_Broken_Remote"
+            android:exported="false" />
+        <activity
+            android:name=".Trinket_Intent_Broken_Magnet"
+            android:exported="false" />
+        <activity
+            android:name=".Trinket_Intent_AAA_Battery"
+            android:exported="false" />
+        <activity
+            android:name=".Transformation_Intent_Yes_Mother"
+            android:exported="false" />
+        <activity
+            android:name=".Transformation_Intent_Super_Bum"
+            android:exported="false" />
+        <activity
+            android:name=".Transformation_Intent_Spun"
+            android:exported="false" />
+        <activity
+            android:name=".Transformation_Intent_Seraphim"
+            android:exported="false" />
+        <activity
+            android:name=".Transformation_Intent_Oh_Crap"
+            android:exported="false" />
+        <activity
+            android:name=".Transformation_Intent_Leviathan"
+            android:exported="false" />
+        <activity
+            android:name=".Transformation_Intent_Guppy"
+            android:exported="false" />
+        <activity
+            android:name=".Transformation_Intent_Fun_Guy"
+            android:exported="false" />
+        <activity
+            android:name=".Transformation_Intent_Conjoined"
+            android:exported="false" />
+        <activity
+            android:name=".Transformation_Intent_Bob"
+            android:exported="false" />
+        <activity
+            android:name=".Transformation_Intent_Beelzebub"
+            android:exported="false" />
+        <activity
+            android:name=".Room_Intent_Curse_Room"
+            android:exported="false" />
+        <activity
+            android:name=".Room_Intent_Treasure_Room"
+            android:exported="false" />
+        <activity
+            android:name=".Room_Intent_Silver_Treasure_Room"
+            android:exported="false" />
+        <activity
+            android:name=".Room_Intent_Shop"
+            android:exported="false" />
+        <activity
+            android:name=".Room_Intent_Red_Treasure_Room"
+            android:exported="false" />
+        <activity
+            android:name=".Room_Intent_Planetarium"
+            android:exported="false" />
+        <activity
+            android:name=".Room_Intent_Challenge_Room"
+            android:exported="false" />
+        <activity
+            android:name=".Room_Intent_Bossroom"
+            android:exported="false" />
+        <activity
+            android:name=".Room_Intent_Boss_Challenge_Room"
+            android:exported="false" />
+        <activity
+            android:name=".Room_Intent_Arcade"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Throwable_Bomb"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Troll_Bomb"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Sticky_Nickel"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Penny"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Nickel"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Mega_Troll_Bomb"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Lucky_Penny"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Golden_Troll_Bomb"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Golden_Penny"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Golden_Bomb"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Giga_Bomb"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Double_Penny"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Double_Bomb"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Dime"
+            android:exported="false" />
+        <activity
+            android:name=".Pick_Up_Intent_Bomb"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Pacer"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Sucker"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Red_Boom_Fly"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Pooter"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Mulligoon"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Mulligan"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Moter"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Leaper"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Hopper"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Hive"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Fly"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Flaming_Hopper"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Boom_Fly"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Boil"
+            android:exported="false" />
+        <activity
+            android:name=".Monster_Intent_Attack_Fly"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Greed_Donation_Machine"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Donation_Machine"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Confessional"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Crane_Game"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Moms_Dressing_Table"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Restock_Machine"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Blood_Donation_Machine"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Fortune_Telling_Machine"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Slot_Machine"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Hell_Game"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Shell_Game"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Rotten_Beggar"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Battery_Bum"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Bomb_Bum"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Key_Master"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Devil_Beggar"
+            android:exported="false" />
+        <activity
+            android:name=".Object_Intent_Beggar"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Wrath"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Ultra_Pride"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Super_Wrath"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Super_Sloth"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Super_Pride"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Super_Lust"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Super_Greed"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Super_Gluttony"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Super_Envy"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Sloth"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Pride"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Lust"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Greed"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Gluttony"
+            android:exported="false" />
+        <activity
+            android:name=".Mini_Boss_Intent_Envy"
+            android:exported="false" />
+        <activity
+            android:name=".Item_Intent_Magic_Mushroom"
+            android:exported="false" />
+        <activity
+            android:name=".Item_Intent_1UP"
+            android:exported="false" />
+        <activity
+            android:name=".Item_Intent_Halo_of_Flies"
+            android:exported="false" />
+        <activity
+            android:name=".Item_Intent_Skatole"
+            android:exported="false" />
+        <activity
+            android:name=".Item_Intent_Brother_Bobby"
+            android:exported="false" />
+        <activity
+            android:name=".Item_Intent_Blood_of_the_Martyr"
+            android:exported="false" />
+        <activity
+            android:name=".Item_Intent_Number_One"
+            android:exported="false" />
+        <activity
+            android:name=".Item_Intent_My_Reflection"
+            android:exported="false" />
+        <activity
+            android:name=".Item_Intent_Crikets_Head"
+            android:exported="false" />
+        <activity
+            android:name=".Item_Intent_Spoon_Bender"
+            android:exported="false" />
+        <activity
+            android:name=".Item_Intent_The_Inner_Eye"
+            android:exported="false" />
+        <activity
+            android:name=".Item_Intent_The_Sad_Onion"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_Necropolis"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_Mines"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_Mausoleum"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_Gehenna"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_Flooded_Caves"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_Dross"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_Downpour"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_Depths"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_Dank_Depths"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_Celler"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_Caves"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_Catacombs"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_ashpit"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter_Intent_Basement"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_purist"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_the_family_man"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_the_host"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_waka_waka"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_computer_savvy"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_slow_roll"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_it_is_in_the_cards"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_beans"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_when_life_gives_you_lemons"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_glass_cannon"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_cursed"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_demo_man"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_cat_got_out_tongue"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_suicide_king"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_solar_system"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_the_tank"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_darkness_falls"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_head_trauma"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_high_brow"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_Intent_pitch_black"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_widow"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_turdlings"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_the_haunt"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_the_fallen"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_the_duke_of_flies"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_steven"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_rag_man"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_pin"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_monstro"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_little_horn"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_larry_jr"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_headless_horseman"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_gurglings"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_gemini"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_famine"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_dingle"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_blighted_ovum"
+            android:exported="false" />
+        <activity
+            android:name=".Boss_Intent_baby_plum"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_threequestion"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_the_lost"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_the_soul"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_the_forgatten"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_samson"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_revived_razarus"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_magdalene"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_lilith"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_lazarus"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_keeper"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_judas"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_jacob"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_isaac"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_eve"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_esau"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_eden"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_cain"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_black_judas"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_bethany"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_azazel"
+            android:exported="false" />
+        <activity
+            android:name=".Character_Intent_apollyon"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_World"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_Judgement"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Sun"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Moon"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Stars"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Tower"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Devil"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Temperance"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Death"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Hanged_Man"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_Strength"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_Wheel_of_Fortune"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Hermit"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_Justice"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Chariot"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Lovers"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Hierophant"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Emperor"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Empress"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_High_Priestess"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Magician"
+            android:exported="false" />
+        <activity
+            android:name=".Card_Rune_PillsIntent_The_Fool"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

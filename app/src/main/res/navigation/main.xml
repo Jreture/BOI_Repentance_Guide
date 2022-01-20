@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_Home">
+
+    <fragment
+        android:id="@+id/nav_Home"
+        android:name="com.example.boi_repentance_guide.HomeFragment"
+        android:label="BOI_repentance_guide"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_Characters"
+        android:name="com.example.boi_repentance_guide.CharacterFragment"
+        android:label="Characters"
+        tools:layout="@layout/fragment_character" />
+    <fragment
+        android:id="@+id/nav_Item"
+        android:name="com.example.boi_repentance_guide.ItemFragment"
+        android:label="Items"
+        tools:layout="@layout/fragment_item" />
+    <fragment
+        android:id="@+id/nav_Trinket"
+        android:name="com.example.boi_repentance_guide.TrinketFragment"
+        android:label="Trinkets"
+        tools:layout="@layout/fragment_trinket" />
+    <fragment
+        android:id="@+id/nav_Card_Rune_Pills"
+        android:name="com.example.boi_repentance_guide.Card_Rune_PillsFragment"
+        android:label="Card_Rune_Pills"
+        tools:layout="@layout/fragment_card_rune_pills" />
+    <fragment
+        android:id="@+id/nav_Pick_up"
+        android:name="com.example.boi_repentance_guide.Pick_upFragment"
+        android:label="Pick up"
+        tools:layout="@layout/fragment_pick_up" />
+    <fragment
+        android:id="@+id/nav_Bosses"
+        android:name="com.example.boi_repentance_guide.BossFragment"
+        android:label="Bosses"
+        tools:layout="@layout/fragment_boss" />
+    <fragment
+        android:id="@+id/nav_Mini_Boss"
+        android:name="com.example.boi_repentance_guide.Mini_BossFragment"
+        android:label="Mini_Bosses"
+        tools:layout="@layout/fragment_mini_boss" />
+    <fragment
+        android:id="@+id/nav_Monsters"
+        android:name="com.example.boi_repentance_guide.MonsterFragment"
+        android:label="Monsters"
+        tools:layout="@layout/fragment_monster" />
+    <fragment
+        android:id="@+id/nav_Transformations"
+        android:name="com.example.boi_repentance_guide.TransformationFragment"
+        android:label="Transformations"
+        tools:layout="@layout/fragment_transformation" />
+    <fragment
+        android:id="@+id/nav_Challenges"
+        android:name="com.example.boi_repentance_guide.ChallengeFragment"
+        android:label="Challenges"
+        tools:layout="@layout/fragment_challenge" />
+    <fragment
+        android:id="@+id/nav_Chapters"
+        android:name="com.example.boi_repentance_guide.ChapterFragment"
+        android:label="Chapters"
+        tools:layout="@layout/fragment_chapter" />
+    <fragment
+        android:id="@+id/nav_Object"
+        android:name="com.example.boi_repentance_guide.ObjectFragment"
+        android:label="Objects"
+        tools:layout="@layout/fragment_object" />
+    <fragment
+        android:id="@+id/nav_Rooms"
+        android:name="com.example.boi_repentance_guide.RoomFragment"
+        android:label="Rooms"
+        tools:layout="@layout/fragment_room" />
+
+</navigation>

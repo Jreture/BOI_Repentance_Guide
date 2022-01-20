@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Object_Intent_Moms_Dressing_Table"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/moms_dressing_table"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#613324"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Moms Dressing Table(엄마의 화장대)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/object_moms_dressing_table"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="부스터팩#2 업데이트에서 추가된 요소. 패시브 아이템을 8개 이상 소지하면 그 다음층부터 매층 시작하는 방마다 오른쪽 위에 화장대가 추가된다. 터치할때마다 자신이 획득한 일부 패시브 아이템의 외형이 랜덤으로 나타난다. 화장대를 벗어나면 미니맵에 슬롯머신으로 표시된다. 폭탄으로 터트릴시 임의의 알약 몇개를 드랍하며 매우 낮은 확률로 Mom's 이름이 붙는 일부 아이템들을 드랍한다.\n\n리펜던스부터는 더 이상 시작 방에서는 등장하지 않게 바뀌면서 보기 굉장히 힘들어졌다. 그나마 자주 보이는 곳이라면 침대방."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

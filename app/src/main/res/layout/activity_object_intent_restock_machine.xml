@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Object_Intent_Restock_Machine"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/restock_machine"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#605B5B"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restock(리스톡기계)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/object_shop_restock_machine"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="애프터버스의 그리드 모드가 추가되면서 같이 추가된 기계. 일반/그리드 모드의 상점이나, 보물방에 확률적으로 배치되며, 애프터버스+ 부턴 비밀방에서도 나올수 있게 되었다. 다만 비밀방에는 혼자 딸랑 있는 경우가 대부분이라 써먹기가 어렵다. 일정량의 동전을 넣거나 폭탄으로 기계를 건들면 해당 방 배열에 맞춰서 액티브 / 패시브 아이템이 리롤된다. 폭탄 기준 4번째 사용 이후부터는 터질 확률이 생기며, 터질 경우 약간의 동전을 드랍한다.\n\n리펜턴스에서는 폭탄으로 기계를 건들 경우 한 번에 터지고 아이템이 빠르게 2번 돌아가는데, 여기서 아이템이 처음 돌 때 재빨리 그 아이템에 접촉하거나 나갔다 이어하기를 하면 그 아이템을 먹을 수 있다. 개발자의 말에 따르면 처음 돌아간 아이템은 배열에서 지워지지 않는다고 하니 실패하더라도 나중에 볼 수는 있다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

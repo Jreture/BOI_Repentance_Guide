@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Object_Intent_Confessional"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/confessional"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#E84C251C"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confessional(고해실)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/object_confessional"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="알트 Bethany로 메가사탄을 처치하면 해금된다. 해금 후 1급 비밀방 또는 천사방에 등장할 수 있다. 헌혈 기계처럼 하트 반 칸을 소모하며 확률적으로(노멀 30%, 하드 25%, Lucky foot이 있다면 1.5배) 작동한다. Magic skin같은 아이템을 이용해 부서진 하트가 있거나 저주가 있다면 치료할 수 있으며, 악마방 거래를 했어도 천사방 확률을 올려줄 수 있다. 소울 하트 1개, 낮은 확률로 이터널 하트 1개를 즉시 추가해 주기도 한다. 하트를 기부하다가 폭발하면 픽업 아이템을 드랍하지만, 매우 낮은 확률로 천사방 아이템 또는 Redemption을 드랍한다. 폭발로 부숴도 픽업 아이템을 드랍한다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

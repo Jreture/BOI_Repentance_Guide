@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Room_Intent_Shop"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/shop"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#8C5030"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop(상점)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/room_shop"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="지도 상에서 동전 모양으로 표시된다.\n\n보물 방처럼 첫 스테이지에서는 열쇠 없이 입장 가능하지만 그 이후에는 문이 열쇠로 잠겨 있다. 상점 안에는 그리드 인형이 놓여져 있고, 각종 물건을 판다. 파는 물건은 액티브 / 패시브 아이템, 그리고 열쇠, 폭탄, 하트 같은 픽업 아이템이다. 가격은 하트는 3, 나머지는 5이며 액티브 / 패시브 아이템은 15이다. 가끔 반액 할인할 때도 있는데 이때 가격이 붉은 색으로 표시된다.\n\n일정 확률로 상점에 들어가면 나오라는 물건은 안 나오고 7대 원죄 보스중의 하나인 Greed(탐욕)와 싸워야 할 때도 있다. 게다가 이 Greed는 한번 물리쳤다고 플레이 내내 나오지 않는 게 아니라 다시 나올 확률이 있다. 1~3 스테이지의 상점에서는 나오지 않으니 안심해도 되지만, 4스테이지(Caves 2 혹은 Catacombs 2) 이후의 상점에서는 출현한다.\n\nGreed의 등장 확률은, 맵 생성시 미니 보스방을 25%의 확률로 배치하는데 만약 미니 보스방이 배치되지 않았다면 5스테이지 이상일 때 1/3의 확률로 비밀방에 Greed 또는 Super Greed가 생성된다. 이 두 조건이 만족되지 않았다면 4스테이지 에서 50%의 확률로, 5~6스테이지 일때 100%의 확률로 생성된다. 단 Greed가 생성되면 다음 스테이지에서는 생성되지 않는다. Greed가 생성된 비밀방은 대개 동전이 놓여 있으며 그 방의 모든 입구가 열려 있다.\n\n아이템 방과 마찬가지로 Womb / Utero 챕터부턴 등장하지 않는다. 오리지널 한정으로 이터널 에디션 업데이트 후 엄청 낮은 확률로 Womb / Utero 이후에 등장하는 경우도 생긴 듯하다.\n\n그리드 인형이 있는 상점에서 High Priestess card를 사용하면 인형 쪽으로 엄마발이 떨어진다.\n\n멤버십 아이템이 있다면 VIP룸이라는 사다리방에 들어갈 수 있다. 그리드가 나와도 들어갈 수 있다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="버전별 변경점"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="리버스\n· 지도 상에서 막다른 곳 중 시작 지점에서 세 번째로 먼 방이 상점으로 지정된다.\n· 기부 머신이 추가되었다. 자세한 사항은 아이작의 번제: 리버스/시스템 참고. 이 때 기부하는 기부머신은 최초 1회 폭발 후 그 다음부터 999개 이상을 넣어도 폭발하지 않는다.\n· Jera 룬을 사용할 경우 구입하지 않아도 픽업 아이템을 복사할 수 있다.\n· Steam Sale을 가지면 상점의 가격이 절반으로 할인된다. (픽업은 2, 아이템은 7) Steam Sale을 두번 이상 먹어도 가격은 절반 이상으로는 할인되지 않는다.\n· 전작과는 달리 Greed가 생성되고 바로 다음 스테이지에서 연속으로 Super Greed가 나오는 안타까운 경우가 생겼다. 심지어 비밀 방에 Greed가 나오고 같은 층 상점에서 Super Greed가 뜨는 경우마저도 있다. 다행히도 전작과는 달리 Greed는 두 번 뜨면 더 이상 뜨지 않는다.\n\n애프터버스\n· 기부머신이 2회차를 포함, 그 이후에도 1000개를 넣으면 무조건 폭발하도록 바뀌었다. 1회차 이후부터는 적당히 넣어서 저금통으로 쓰는게 좋다.\n· Diplopia를 사용하면 Jera룬과 달리 아이템까지 전부 복사한다.\n· Steam Sale을 두 번 가지면 아이템은 한번 먹은 것처럼 보이지만 상점의 모든 아이템 가격이 0으로 변한다. 보통 상점을 털어버린다는 표현을 이런 데서 자주 쓰게 된다.\n· boomer boy로 기부 머신을 터트릴 경우 폭발한 범위 한 개당 하나의 폭발로 본다. 즉 기부 머신 바로 앞에다 터트리면 많은 양의 코인이 나온다.\n· 상점에서 greed, super greed가 나왔어도 rib of greed 장신구가 있으면 상점으로 다시 변경된다. 이 경우는 소지하지 않았다가 소지 후 들어갔을 때이며 보통은 소지한 상태로 들어가면 무조건 상점밖에 안 나온다.\n· 기부 머신에 glowing hourglass를 사용하여 무제한 기부가 가능하다. 아이템을 쓰면 모든 설정치가 이전 방으로 돌아오기 때문에 코인 개수도 돌아오지만 기부함의 기부 상태는 누적되기 때문.\n· 기부함에 동전이 끼거나 없어질 때까지 기부한 후 상점방을 나오고 게임을 강제 종료하면 그 층에서 시작했던 스펙을 가지고 시작 지점부터 다시 진행하지만 기부함의 기부 금액은 누적되어 있다. 이 방법을 이용해 최대 999까지 기부할 수 있다. 1000을 기부해도 같은 방법을 쓰면 다시 999에서 멈춰 있다.\n· Restock! 아이템을 먹으면 구매한 자리에 항상 같은 종류와 같은 가격의 상품이 나온다. 하트는 완전 동일하게, 픽업템은 종류는 같고 효과만 다른 것이, 아이템은 종류가 같은 것만 나온다. 예를들어 패시브 아이템을 구입하면 패시브 아이템류만 나온다. 단 Restock!를 상품 구매 후에 소유하게 되면 리스톡기계가 없는 이상 구매했던 상품자리는 갱신되지 않으므로 주의할 것. Steam sale 2개와 Restock!이 있으면 상점 배열이 없어질 때까지 무한정 먹을 수 있으며 상점 배열에 있는 Chaos때문에 결국 모든 배열의 아이템을 가져볼 수 있다. 주의할 점은 Missing No.를 가지는 순간 D4기능으로 리스톡이 사라지고 그동안 먹어왔던 아이템이 너무 많아서 어떤 아이템이든 거의 Breakfast만 뜨는데다 몇층 안 가서 소유한 아이템이 빠르게 줄어드는 것을 볼 수 있다. 맘놓고 아이템 리스폰되는 자리에 서 있지 말자.\n· 아주 낮은 확률로 그리드 인형을 폭발시키면 Greed로 변신해서 나오는 경우가 있다.\n\n애프터버스+\n· Steam Sale을 가지면 이미 할인된 가격은 거기서 반으로 더 할인된다.(픽업은 1, 아이템은 3)\n· 리버스와 달리 늘어난 아이템 덕에 33종의 액티브 아이템과 44종의 패시브 아이템을 판매한다. 이중 일부는 도전 과제를 언락해야 볼 수 있다.\n· Silver Dollar 장신구가 있으면 챕터4 Womb 레벨에서도 상점을 볼 수 있다.\n· 상점 업그레이드가 하나도 안되있을 경우 상점에서 아이템 1종만 나올 수도 있다.\n· 상점 업그레이드가 4단계일 경우 상점에서 추가적으로 몹 2마리, 럭키 코인 2개, 그리드 인형 5개가 있는 방이 나올 수 있다.\n· 기부 머신 대신 20% 확률로 리스톡 머신이 나올 수 있다.이 기계를 1~5코인 기부하거나 폭탄으로 건들면 상점의 아이템을 구입했더라도 새로 갱신되며 리스톡 기계가 터지면 그 층에서는 갱신이 불가능해진다. 상품이 변경될 때는 가격도 변동될 수 있다.\n· Glowing Hourglass가 5회로 한정됨에 따라 누적 기부 방법도 5회까지만 할 수 있도록 변경되었으나 이후 부스터팩 #5 패치로 아이템 사용 횟수는 무제한으로 바꾸는대신 기부수치까지 완벽하게 되돌린다.\n· 강제 종료 버그는 고쳐져서 이제 새로 시작해도 기부함도 기부 이전으로 돌아간다.\n\n리펜턴스\n· 상점 문 위에 동전 모양이 추가되어 더 이상 책방과 혼동할 일이 없게 되었다.\n· 보물 방과 같이 첫 스테이지는 열쇠 소모 없이 들어갈 수 있다.\n· 자루도 판매 항목에 포함되었다. 가격은 7 코인.\n· 하드 모드에서는 일정 확률로 기부함을 통한 상점 업그레이드 레벨이 낮아져서 판매하는 아이템 수가 적어질 수 있다.\n· 이미 할인된 가격은 더 이상 Steam Sale의 영향을 받지 않으며 Steam Sale 아이템의 중첩 효과도 합연산이 아닌 1/(1+Steam Sale 갯수)로 적용되어 추가 할인되는 것으로 너프되었다.\n· 리펜턴스 초기에는 리스톡 머신이 등장하지 않고 기부 머신만이 등장하다가 1.7.5 패치로 다시 리스톡 머신이 등장하는 방이 추가되었다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

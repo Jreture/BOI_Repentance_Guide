@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transformation_Intent_Yes_Mother"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/yes_mother"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#9E6969"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes Mother?(엄마)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/transformation_yes_mother"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="엄마 관련 아이템 3개 이상 획득 시 변신한다. 캐릭터에 뒤에 엄마의 칼이 생기며 꼬리처럼 달고다닌다. 이 칼은 직접 조종할 수 없다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="세트 관련 아이템"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Mom's Bottle Of Pills(엄마의 약병)\nMom's Bra(엄마의 브래지어)\nMom's Coin Purse(엄마의 동전지갑)\nMom's Contacts(엄마의 렌즈)\nMom's Eye(엄마의 눈)\nMom's Eyeshadow(엄마의 아이섀도우)\nMom's Heels(엄마의 하이힐)\nMom's Lipstick(엄마의 립스틱)\nMom's Key(엄마의 열쇠)\nMom's Knife(엄마의 식칼)\nMom's Pad(엄마의 생리대)\nMom's Perfume(엄마의 향수)\nMom's Pearls(엄마의 진주)\nMom's Purse(엄마의 지갑)\nMom's Underwear(Mom's Underwear)\nMom's Wig(엄마의 가발)\nMom's Razor(엄마의 면도칼)\nMom's Shovel\nMom's Box(엄마의 상자)\nMom's Bracelet(엄마의 팔찌)\nMom's Ring(엄마의 반지)"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

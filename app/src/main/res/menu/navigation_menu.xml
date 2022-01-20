@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+//navigation menu 텍스트버튼
+
+    <item
+        android:id="@+id/nav_Home"
+        android:icon="@drawable/menu_home"
+        android:title="홈"/>
+    <item
+        android:id="@+id/nav_Characters"
+        android:icon="@drawable/menu_character"
+        android:title="캐릭터"/>
+    <item
+        android:id="@+id/nav_Item"
+        android:icon="@drawable/menu_item"
+        android:title="아이템" />
+    <item
+        android:id="@+id/nav_Trinket"
+        android:icon="@drawable/menu_trinket"
+        android:title="장신구" />
+    <item
+        android:id="@+id/nav_Card_Rune_Pills"
+        android:icon="@drawable/menu_card"
+        android:title="카드/룬/알약" />
+    <item
+        android:id="@+id/nav_Pick_up"
+        android:icon="@drawable/menu_pick_up"
+        android:title="픽업아이템" />
+    <item
+        android:id="@+id/nav_Bosses"
+        android:icon="@drawable/menu_boss"
+        android:title="보스" />
+    <item
+        android:id="@+id/nav_Mini_Boss"
+        android:icon="@drawable/menu_mini_boss"
+        android:title="미니보스" />
+    <item
+        android:id="@+id/nav_Monsters"
+        android:icon="@drawable/menu_monster"
+        android:title="몬스터" />
+    <item
+        android:id="@+id/nav_Transformations"
+        android:icon="@drawable/menu_transformation"
+        android:title="아이템세트" />
+    <item
+        android:id="@+id/nav_Challenges"
+        android:icon="@drawable/menu_challenges"
+        android:title="도전모드" />
+    <item
+        android:id="@+id/nav_Chapters"
+        android:icon="@drawable/menu_chapter"
+        android:title="챕터" />
+    <item
+        android:id="@+id/nav_Object"
+        android:icon="@drawable/menu_object"
+        android:title="사물" />
+    <item
+        android:id="@+id/nav_Rooms"
+        android:icon="@drawable/menu_room"
+        android:title="특수방" />
+</menu>

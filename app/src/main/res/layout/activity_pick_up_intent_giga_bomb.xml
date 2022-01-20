@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pick_Up_Intent_Giga_Bomb"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/giga_bomb"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#434343"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giga Bomb(기가 폭탄)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/pick_up_giga_bomb"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text=" Ashpit 스테이지에서 등장하는 몬스터 Bombgagger, 그리고 Beast전에서 Ultra War가 사용하는 거대한 폭탄. 간혹 Ashpit 스테이지나 기밀방에서 자체적으로 생성되기도 한다. 폭발 범위가 무지막지하며, 폭발 후 폭발한 자리에 5X5 크기의 마름모꼴 구덩이를 남기지만 방 앞의 땅 1칸은 폭파시킬 수 없다. 상기한 방법으로 생성된 기가 폭탄은 불이 붙은 상태로 생성되기 때문에 Safety Scissors를 들고 있어야 자연 생성된 기가 폭탄을 획득할 수 있으며, 액티브 아이템 Everything Jar가 꽉 차있을 때 사용하면 간혹 얻을 수 있다. Rocket in a Jar을 보유하고 있으면 거대한 미사일로 변한다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="통합 설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="폭탄은 E 키로 설치할 수 있고, 설치 상태에서는 히트박스를 가져 캐릭터의 움직임을 제한하거나 눈물 등으로 이동시킬 수 있다. 설치하면 잠시 후 폭발하여 애프터버스까지는 주변 적에게 60의 피해를 줬으며, 리펜던스에서는 방어력 무시 100 데미지로 상향되었다. 캐릭터가 폭발 근처에 있을 경우 하트 1칸분의 피해를 입는다. 이 폭발은 바위 등의 파괴 가능한 오브젝트를 파괴할 수 있으며, 비밀 방과 기밀 방의 문도 열 수 있다.\n\n한 게임에서 55개의 동전을 소지할 경우 카인과 패시브 아이템 Lucky Foot이 해금된다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

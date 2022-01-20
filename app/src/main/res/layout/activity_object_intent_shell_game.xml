@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Object_Intent_Shell_Game"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/shell_game"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#9A7979"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shell Beggar(야바위꾼 거지)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/object_shell_game"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="야바위 놀이를 통해 성공하면 아이템을 주는 거지. 사실 거지보다는 슬롯 머신에 가깝지만, 어쨌는 거지가 운영하는 시설(?)이다 보니 아이작 위키에서는 거지로 분류하고 있다. 한 번 플레이하는데 1페니를 요구하며, 주는 아이템(동전, 하트, 폭탄, 열쇠)을 보여준 후 마구 돌리며, 돌린 후에는 세 개의 해골 중에서 하나를 선택해 맞추면 해당 아이템 2개를 드랍하며, 틀리면 공격하는 빨간 파리 1마리가 소환된다. 하지만 돌리는 게 눈에 보이지 않는 만큼 걍 찍기 게임처럼 보이는데 사실은 일반 슬롯류처럼 돌렸을때 실패인지 성공인지 결정이 나있다. 실패가 당첨될 경우 어떤것을 선택해도 실패하며 반대로 성공하면 뭘 찍어도 당첨물품이 나온다. 그 중 폭탄은 트롤 폭탄으로 바뀔 수 있다. 간혹 파리 위에 하트가 떠 있는 걸 제시할 때도 있는데, 이 때 맞추면 Skatole(여기서만 등장)을 드랍하며 사라진다. Skatole을 얻은 후에는 야바위꾼이 더 이상 Skatole을 드랍하지 않기 때문에 돈이 사라질 때까지 야바위를 할 수 있다. 만약 Skatole을 얻고 싶지 않다면 Skatole을 제시했을 때 방을 나갔다 들어오면 된다. Lucky Foot 아이템이나 럭 수치를 통해 성공률을 높일 수 있지만 100%까지 늘어나지는 않는다.\n\n만약 야바위를 100번 플레이했다면 장신구 Counterfeit Penny가 언락된다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

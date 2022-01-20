@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pick_Up_Intent_Golden_Troll_Bomb"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/golden_troll_bomb"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#EDD928"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Golden Troll Bomb(황금 트롤 폭탄)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/pick_up_golden_troll_bomb"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="드랍 된 이후로 황금 폭탄처럼 영구적으로 폭발한다. Safety Scissors 장신구를 가지고 있으면 황금 폭탄으로 변한다. 대놓고 엿먹으라고 만든 듯한 트롤 폭탄이지만 폭발 주기가 그렇게 짧지 않아서 돌을 부수거나 황금방을 열어보는 등 다양한 용도로 사용할 수도 있다. 또 The Beast전에서 생성될 경우 The Beast랑 접촉 시 빠른 속도로 폭발을 계속하는데, 100대미지 + 방어력 무시 효과 덕분에 The Beast가 말 그대로 녹아 버린다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="통합 설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="폭탄은 E 키로 설치할 수 있고, 설치 상태에서는 히트박스를 가져 캐릭터의 움직임을 제한하거나 눈물 등으로 이동시킬 수 있다. 설치하면 잠시 후 폭발하여 애프터버스까지는 주변 적에게 60의 피해를 줬으며, 리펜던스에서는 방어력 무시 100 데미지로 상향되었다. 캐릭터가 폭발 근처에 있을 경우 하트 1칸분의 피해를 입는다. 이 폭발은 바위 등의 파괴 가능한 오브젝트를 파괴할 수 있으며, 비밀 방과 기밀 방의 문도 열 수 있다.\n\n한 게임에서 55개의 동전을 소지할 경우 카인과 패시브 아이템 Lucky Foot이 해금된다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

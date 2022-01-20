@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Boss_Intent_turdlings"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/turdlings"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#E2653F10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turdlings (응가링)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/boss_turdlings"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="등장 장소"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="보스 방(단독) - Basement/Burning Basement\n보스 방(Double Trouble) - Catacombs, Womb/Utero/Scarred Womb\nChest"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Gurglings 보스의 똥 변형 버전이다. 챕터 1 보스 중에서 가장 어렵다. 돌진후엔 무조건 소환을 하므로 실질적인 패턴이 1개밖에 없어서 오직 그것만 난사하는데... 문제는 그 돌진을 난사할때마다 Brownie Corn들이 무한정 생겨난다는것. 눈물 한 방에 죽는 최약체들이지만 물량 때문에 어렵다. Basement에선 아자젤이 아닌 이상 초반엔 몬스터들을 처리하는데 시간이 많이 걸릴수밖에 없는데 Turdlings는 항상 두 마리씩 나오므로 둘 다 돌진이 끝나고 나선 8마리가 무조건 소환된다.\n\n다시말해 총 8발의 눈물이 강제로 낭비돼야 하는데, 문제는 이 두마리가 그걸 지켜보고만 있지 않는다는것. Brownie Corn을 4마리 정도 없앴을 쯤이면 다시 8마리가 추가돼있다. Turdlings만 먼저 죽이려고 해도 이번엔 Brownie Corn들이 미약하게나마 돌진을 한다. 정말 정신없이 피하다가 결국엔 누워있는 자신의 캐릭터를 보게 될 것이다.\n\n특이한 점이 똥 계열 보스 판정을 받아서 Butt Bombs에 체력을 회복함에도 불구하고 Flush 아이템은 통하지 않는다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="해금조건"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Chest 스테이지의 보스 ???를 각기 다른 캐릭터 3명으로 격파"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="보스 체력 및 패턴"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="* 체력 : 각각 50 (100% / +0)\n* 패턴 1 : 미끄러운 장판을 깔면서 아이작에게 돌진한다. 돌진 중에는 주기적으로 방귀 뀌는 소리가 들린다.\n* 패턴 2 : 돌진 후 Brownie Corn을 4마리 소환한다. Brownie Corn이 8마리 이상이 되면 소환을 하지 않고 Fatty처럼 방귀를 뀐다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

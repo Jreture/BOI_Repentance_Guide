@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Character_Intent_keeper"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/keeper"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#6A6767"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KEEPER(키퍼)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/character_keeper"
+        android:background="#DF371111"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="캐릭터 설정"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="· 체력 : 동전목숨2개 +침묵처치시1개(최대 3개)\n· 공격력 :3.5 (* 1.2)\n· 공격 속도 : 1.06\n· 탄속 : 1\n· 사거리 : 6.5\n· 이동 속도 : 0.9\n· 운 : -2\n· 고유 능력 : 3방향 공격, 모든 하트 픽업이 자폭 파리로 전환, 체력 거래가 코인 거래로 바뀜\n· 기본 소지 픽업 : 폭탄 1개, 동전 1개, Store Key(상점 열쇠)\n· 기본 소지 아이템 : Wooden Nickel(나무 동전)\n· 캐릭터 해금 방법 : Greed Machine에 동전 1000개 기부\n· 생득권 효과 : 동전 증가 - 코인 하트 1칸 증가, 코인 하트 상한 1칸 증가"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="관련 해금 요소"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="추후 생성"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

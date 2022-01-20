@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeFragment"
+    android:background="#E8E5E5">
+
+    //화면내용입력
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nThe Binding Of Isaac - Repentance 가이드입니다."
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/repentance_main">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="현재 가이드는 몇개의 정보들만 등록되어 있는 미완성작입니다.\n\nThe Binding Of Isaac에 고어한 이미지가 많기 때문에 가이드를 이용하실때 주의하시길 바랍니다. \n\n추후에 The Binding Of Isaac의 모든 DLC의 정보들(Repentance까지)이 추가될 예정입니다 "
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Boss_Intent_blighted_ovum"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/blighted_ovum"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#ED4C1C1C"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blighted Ovum (계류유산)"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/boss_blighted_ovum"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="등장 장소"
+        android:textColor="#E2420808"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:text="보스 방(단독) - Cellar\n보스 방(Double Trouble) - Necropolis\nCathedral/Sheol, Chest/Dark Room"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="left"
+        android:text="Gemini의 다른 버전으로 작은 쪽은 무적, 큰 쪽만 피격 판정을 가지고 있다. Gemini보다 훨씬 빠르며 큰 쪽이 지나갈 때 생기는 피웅덩이를 조심해야 한다. 속도가 빠르기 때문에 피웅덩이가 사라지기 전에 구석에 갇힐 수 있으므로 맵을 빙빙 도는 식으로 상대해야 한다.\n막달레나, 알트 막달레나, 혹은 알트 릴리스로 플레이할 때 처음부터 이 보스를 만나면 느려서 도망칠수가 없으니 주의해야한다.\n여담으로 이 보스의 이름인 계류유산은 아기집만 있고 태아가 보이지 않거나 사망한 태아가 자궁에 잔류하는 상태를 의미한다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보스 체력 및 패턴"
+        android:textColor="#E2420808"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="left"
+        android:text="* 체력 : 140 (100% / +0)\n* 큰 쪽 패턴 1 : 플레이어에게 달려든다. Gemini와 유사하지만 Blighted Ovum은 중간에 지쳐서 멈추는 일이 없다. 지나간 자리에는 피웅덩이가 깔리며 이를 밟을 시 데미지를 입는다. 비행 상태일 때는 데미지를 받지 않는다.\n* 작은 쪽 패턴 1 : 좌-우로 플레이어와 일직선으로 마주치는 상황이 되면 혈사포를 발사한다. 리버스에선 인식률이 늘어나, 약간 상향되었다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

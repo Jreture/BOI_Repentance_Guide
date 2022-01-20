@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Object_Intent_Greed_Donation_Machine"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/greed_donation_machine"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#5F4368"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Greed Donation Machine(그리드 기부 기계)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/object_greed_donation_machine"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="그리드모드에서만 볼 수 있는 기계로 최종스테이지에서 울트라 그리드 보스를 물리치면 캐릭터가 있는 자리에서 나온다. 때문에 보상 상자 근처에 어물쩡 거리다가 기부 하나 못하고 상자속에 쏙 빨려 들어가는 경우도 있을 수 있으니 되도록 구석진곳에서 기부하자. 너무 벽에 붙으면 기부 숫자가 안보일수도 있다. 기부를 한다는 점에선 기부 머신과 똑같지만 고장 확률과 해금되는 요소가 다르다. 특징은 다음과 같다.\n\n코인을 기부했을때 고장날 확률은 다음과 같다. 5%여도 그 이상 고장날 확률이 올라가며 올라가는 속도가 코인 넣는 속도에 비해 매우 빠르게 올라간다. 최대 고장 확률은 20%를 넘길 수 없다.\n\n고장 확률은 각 캐릭마다 적용된다. 가령 아이작으로 10% 고장확률까지 플레이 했다면 카인으로 할때 0%부터 시작하는것. 그래서 기부를 최대치로 올리려면 각각 다른 캐릭으로 도전하는것이 수월하다. 단 애프터버스 플러스에서는 그리디어 모드가 추가되었는데 고장 확률 상승치가 그리드모드보다 낮다. 그전에 그리디어모드에서 같은 캐릭이어도 고장 확률이 따로 0%로 시작하는것을 확인했는데 아마 부스터팩 패치중에 바꾼것으로 추정된다.\n\n그리드모드와 그리디어모드의 기부 누적수는 서로 공유된다. 그리드에서 700코인을 기부했다면 그리디어에서 기부를 시작할때 700부터 시작한다.\n\n누적 기부가 특정 수치에 도달할 때마다 업적 및 아이템이 해금되는다 그 수치는 다음과 같다. 그리드모드 항목에서도 확인 가능하다.\n\n강제 종료로 무한 기부하는 방법이나 Glowing Hour Glass 액티브 아이템을 사용해 무한 기부 하는 방법은 전부 애프터버스 플러스 와서 막혔다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="고장 확률"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="기부 코인\n0~54 : 0%\n55~93 : 1%\n94~113 : 2%\n114~126 : 3%\n127~137 : 4%\n138~ : 5%~20%"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

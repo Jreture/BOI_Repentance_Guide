@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Boss_Intent_the_fallen"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/the_fallen"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#131313"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Fallen (타락한 자)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/boss_the_fallen"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="등장 장소"
+        android:textColor="#E2420808"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:text="보스 방(단독) - 악마방 입장 후 Basement/Cellar/Burning Basement ~ Womb/Utero/Scarred Womb\n보스 방(Double Trouble) - Womb/Utero\nSheol, Chest/Dark Room"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946"></View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="left"
+        android:text="오리지널 시절 할로윈 업데이트로 추가된 보스. The Fallen의 보스 방은 악마방으로 취급되기 때문에 클리어 시 악마방 배열의 아이템을 드랍한다. 리펜턴스에서는 천사방 메타가 강세라서 좋은 악마방 아이템을 기대할 수 있는 보스. 다만 이 때문인지 리펜턴스 이전에 비해 등장 빈도가 매우 낮아졌다.\n악마방은 2층부터 등장하기 때문에 1층에서는 일반적으로 볼 수 없지만 Joker나 빨간 상자로 악마방에 들어간 후 Forget Me now나 주사위 방을 통하여 스테이지를 재시작하면 볼 수 있다. R Key 아이템은 악마방 진입 여부가 초기화되기 때문에 안된다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보스 체력 및 패턴"
+        android:textColor="#E2420808"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="left"
+        android:text="* 체력 : 60 (100% / +45)\n* 패턴 1 : 3갈래 핏방울, 4갈래 핏방울을 순서대로 발사한다.\n* 패턴 2 : 플레이어에게 달려든다. 일정 데미지를 입으면 멈추고 +자 방향으로 혈사포를 발사한다.\n* 체력을 50% 깎으면 둘로 분열한다. 개별적인 HP를 지니고 있으며 패턴도 개별적이다. 분열 이후의 패턴도 분열 이전과 완전히 동일."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

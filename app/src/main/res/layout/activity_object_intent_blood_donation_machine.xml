@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Object_Intent_Blood_Donation_Machine"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/blood_donation_machine"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#6E6B6B"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blood Donation Machine(헌혈기계)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/object_blood_donation_machine"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="이름 그대로 체력을 소모해 돈을 만드는 기계. XIV - Temperence 카드를 통해 소환할 수 있다. 체력 반 칸(Womb부터는 1칸)을 소모해 무작위 동전 1~3개를 떨어뜨리며, 낮은 확률로 Child's Heart를 드랍하거나 기계가 터지면서 IV Bag를 드랍한다. 헌혈을 30회 이상 했다면 Blood Bag가 언락되며 이후 기계가 터질 때 Blood Bag 또한 낮은 확률로 등장한다. 이터널 하트 → 빨간 하트 → 소울/블랙 하트 순으로 소모되며 체력이 반 칸일 때 사용하면 당연히 사망한다.\n\n무적으로 만드는 아이템이 있다면 무적 시간 동안 체력이 소모되지 않는다. 헌혈기계의 아이템 버전인 IV Bag에는 이 사항이 적용되지 않으니 주의."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

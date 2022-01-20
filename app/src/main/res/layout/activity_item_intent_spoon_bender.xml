@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Item_Intent_Spoon_Bender"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/spoon_bender"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#616060"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spoon Bender(초능력자)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/item_spoon_bender"
+                android:background="#DF371111"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아이템 설정"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="· ID : 3\n· 습득 시 대사 : Homing shots (유도 공격)\n· 언락 조건 : 상시 언락\n· 등장 장소 : 보물방, 그리드모드 보물방\n· 등급 : 3"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="눈물이 보라색으로 변하고 유도 기능이 추가된다.\n몹이 Z축으로 상승하는 경우, 눈물들이 다시 내려올 지점에 가서 일정 시간 맴돌다가 발이나 심장이 내려오면 한꺼번에 맞는다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="주요 시너지 효과"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="＊ 20/20 / Cursed Eye / The Inner Eye / Mutant Spider : 모든 눈물에 유도효과가 생긴다.\n＊ Brimstone : 적을 향해 혈사가 휜다.\n＊ Azazel 캐릭터 : 유황보다는 약하지만 사거리 스텟이 증가할수록 유황과 비슷해진다.\n＊ Compound Fracture / Cricket's Body / The Parasite : 파열된 눈물들도 전부 유도효과가 있다.\n＊ Dr. Fetus : 폭탄이 적을 향해 움직인다.\n＊ Epic Fetus : 적이 타깃 근처에 있으면 타깃이 적을 향해 스스로 움직인다.\n＊ Fate's Reward / Incubus : 해당 패밀리어들의 눈물도 유됴효과가 있다.\n＊ Haemolacria : 메인 눈물과 파열된 눈물 전부 유도효과가 있다.\n＊ Ipecac : 유도 속성을 가진 폭발성 눈물을 발사한다.\n＊ Lead Pencil / Monstro's Lung : 다발로 나가는 눈물들이 전부 유도효과를 가진다.\n＊ Marked : 타깃을 향해 눈물을 발사하고 있을 때 눈물 경로 주위에 적이 있으면 타깃 대신 적을 향해 움직인다.\n＊ Mom's Knife : 칼이 적을 향해 방향을 틀지만 그 정도가 작다.\n＊ Sprinkler : 스프링클러가 유도 눈물을 발사한다.\n＊ Strange Attractor : 적을 끌어들이는 눈물을 발사하기 때문에 명중률이 높다.\n＊ Technology, Technology 2: 레이저가 쉽게 휜다.\n＊ Tech X : 링의 가장자리 근처에 적이 있으면 링의 일부분이 뾰족하게 튀어나와서 적을 공격한다. 사실상 링의 공격 범위가 넓어진다. 단 링의 안쪽으로는 튀어나오지 않는다.\n＊ Anti-gravity : 눈물 공격을 유지시키고 있으면 눈물의 반중력 제한 시간이 다하기 전에 적이 근처에 있을 경우 계속 따라다닌다.\n＊ My reflection : 눈물이 이동하는 경로 근처에 적이 있을 경우 눈물이 캐릭터가 아닌 적을 향해 이동한다.\n＊ Technology Zero : 눈물은 유도 효과를 가지지만 눈물 사이의 자기장은 유도 속성이 없다.\n＊ The Ludovico Technique : 눈물 이동을 멈췄을 때 근처에 적이 있다면 그쪽으로 끌리듯이 이동한다. 단 이 유도효과는 단일 대상을 기준으로 하기 때문에 적이 여럿 있으면 컨트롤이 어려울 수 있다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

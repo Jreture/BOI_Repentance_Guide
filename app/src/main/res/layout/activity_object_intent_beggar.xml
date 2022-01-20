@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Object_Intent_Beggar"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/beggar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#957171"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beggar(일반 거지)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/object_beggar"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="돈을 요구하는 거지. 돈을 주다 보면 무작위 픽업 아이템이나 카드를 주며, 낮은 확률로 액티브 / 패시브 아이템을 주고 사라진다. 아이템은 50%의 확률로 최대 체력을 한 칸 올려주는 식사류 템들을 드랍하며, 나머지 50% 확률로 거지 배열 아이템을 드랍한다. 거지 배열은 주로 콩 아이템, 상점 아이템, 보스방 아이템들로 구성되어 있으며, Bum Friend나 Bumbo를 줄 때도 있다. 간혹 트롤 폭탄을 드랍하고 자살할 때도 있는데 재빨리 트롤 폭탄을 밀어내어 자살을 방지할 수도 있다.\n\n폭탄으로 죽일 경우 악마방 확률이 35% 증가하며, 아이템을 주고 떠날 때까지 거래했다면 천사방 확률이 25% 증가한다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

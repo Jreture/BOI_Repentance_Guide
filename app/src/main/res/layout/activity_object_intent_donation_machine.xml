@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Object_Intent_Donation_Machine"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/donation_machine"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#DD5A220C"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donation Machine(기부기계)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/object_donation_machine"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="상점방에서 좌측 상단에 등장하는 기계로 리버스때부터 볼 수 있다. 보통은 상점에 등장하지만 간혹 암시장(Black Market)이나 아케이드방, 금고방에 등장할수도 있다. 일종의 저금통 개념으로 기계를 터치할때마다 가지고 있는 코인 1개를 기부하고 수치를 1씩 올리며 반대로 폭발에 의해 코인이 나올 수 있다. 말 그대로 기부함인데 이 기부함의 특징은 다음과 같다.\n\n기부 머신이 고장날 확률은 5%로 이 수치는 고정이다. 기계가 고장이 나면 동전이 끼면서 슬롯의 숫자가 뒤틀어져 현재 몇까지 기부했는지 육안으로는 보여주지 않는다. 기부 기계가 5%의 고정확률이란점으로 볼때 2개까지 기부될 확률이 95%, 3개는 90.3%, 14개는 51.3%, 46개는 10%, 그리고 90% 정도의 코인을 전부 투입할수 있는 확률은 1%밖에 안된다. 즉 평균적으로 20개정도의 동전을 받기 때문에 최대치인 999개까지는 약 50회 정도를 기부해야 한다.\n\n폭탄 또는 주변 폭발로 인해 기부 머신을 건드릴 경우 머신이 터지면서 약 7, 8코인을 드랍한다. 이후 해당 게임동안 더 이상 기부머신이 등장하지 않는다.\n\n처음으로 기부된 코인이 999개를 넘기면 기부머신이 폭발한다. 최대수치로 넣어야지만 볼 수 있는 폭발 장면으로 동시에 10코인인 다임을 14~15개정도 드랍시킨다. 다음게임부터는 0으로 초기화 되어있고 999개 이후 또 넣으면 기부머신이 또 폭발한다(...)\n\n기부 기계에 누적된 수치마다 해금되는 요소들이 있다. 일단 한번 해금하면 코인수를 줄여도 다시 잠기지 않기 때문에 가급적이면 기계를 터트릴때까지 풀로 빨리 채워두는것이 좋다. 그 이후부턴 정말 저금통 용도로 부담없이 쓸 수 있다.\n\n시드(Seed)입력이나 도전 모드, 데일리 챌린지, 게임 시스템을 직접적으로 건드는 모드를 쓸 경우 기부 머신이 나타나지 않는다.\n\n아주 적은 확률로 기부시 행운을 1 올려준다. 돈을 빼가도 행운은 줄어들지 않지만 해당 게임에서만 효력이 있다. 리셋하면 행운도 당연히 초기화 된다.\n\n각 층마다 10코인을 기부하면 천사방 확률을 올려준다. 단 악마 거래를 한번이라도 해서 천사방 확률을 0%로 만들면 올라가지 않는다.\n\n누적 기부가 특정 수치에 도달할 때마다 업적 및 아이템이 해금되는데 그 수치는 다음과 같다.\n\n Humbling Bundle 패시브 아이템이 있을 경우 기부 머신에서 폭발로 나오는 코인은 전부 2개씩 붙어서 나온다. 창조경제적인 일이지만 코인을 복구하는 과정에서 기계가 고장날 수 있으니 주의.\n\n기부 머신의 기부를 빨리 채우려면 Iv bag, Piggy Bank등 피격에 의해 코인을 생성하는 방법이나 Jera룬을 사용해 코인을 복사해서 기부하는 방법도 있지만 기부 머신이 잘 고장난다는 점을 생각하면 아자젤 캐릭을 이용해서 초반에 있는 층들의 코인을 빠르게 모아서 기부하고 리셋하는 방법이 가장 무난하다. 리펜턴스에서는 적을 죽이면 코인을 생성하는 알트 키퍼로 매 판마다 수십 코인을 기부할 수 있어 효율이 크게 올라갔다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="해금 내용"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="기부 코인\n10개 : Blue Map 패시브 아이템\n20개 : Store Upgrade lv.1(상점에서 파는 물품의 항목이 3개로 늘어난다.)\n50개 : There's Options 패시브 아이템\n100개 : Store Upgrade lv.2(상점에서 파는 물품의 항목이 4개로 늘어난다.)\n150개 : Black Candle 패시브 아이템\n200개 : Store Upgrade lv.3(상점에서 파는 물품의 항목이 5개로 늘어난다.)\n400개 : Red Candle 액티브 아이템\n600개 : Store Upgrade lv.4(상점에서 파는 물품의 항목이 6개로 늘어나며 레어방이 생기는 확률도 이 레벨에서만 생긴다.)\n900개 :Blue Candle 액티브 아이템\n999개 : Stop Watch 패시브 아이템"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

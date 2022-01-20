@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Object_Intent_Key_Master"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/key_master"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#535151"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Key Master(열쇠 거지)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/object_key_master"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="열쇠를 요구하는 거지. 황금 열쇠는 받지 않는다. 열쇠를 주다 보면 다양한 상자를 드랍하며, 낮은 확률로 액티브/패시브 아이템을 주거나 지금까지 못 딴 황금 상자 열라는 의미에서 Paper Clip을 주고 사라진다. Chest/Dark Room이라면 이 상자들이 빨간 상자가 아니라면 액티브/패시브 아이템이 되는 만큼, 열쇠가 넘쳐난다면 좋은 파밍이 된다. 열쇠 거지 배열은 파리류 아이템, 열쇠 아이템 그리고 Key Bum으로 구성되어 있다.\n\n애프터버스까지만 해도 상자나 아이템을 드랍할 확률이 낮아 열쇠를 30~40개쯤 바쳐도 아이템 주지 않는 경우가 허다했는데, 리펜던스에서는 상자 및 아이템 드랍 확률이 상향되었다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

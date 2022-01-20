@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Item_Intent_My_Reflection"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/my_reflection"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#9E9999"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Reflection(거울상)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/item_my_reflection"
+                android:background="#DF371111"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아이템 설정"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="· ID : 5\n· 습득 시 대사 : Boomerang tears (부메랑 눈물)\n· 언락 조건 : 상시 언락\n· 등장 장소 : 보물방, 그리드모드 보물방\n· 등급 : 0"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="눈물이 부메랑처럼 되돌아온다.\n사거리 1.5, 눈물 속도 0.6, 눈물 높이 1.0 증가. 컨트롤이 어려워지지만, 체공시간이 조금 길어진다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="주요 시너지 효과"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="＊ Anti-Gravity : 공격키를 유지 시 정지해 있는 눈물이 캐릭터 쪽으로 살살 이동한다. 공격키를 떼면 눈물이 거울 상의 효과를 제대로 따라간다.\n＊ Brimstone, Azazel 캐릭터 : 캐릭터가 발사했던 위치를 기준으로 이동하면서 발사할 때 이동방향의 반대 방향으로 발사한다. 아자젤 캐릭터는 기본 사거리가 2배로 된다.\n＊ Continuum : 벽에 붙어서 너머로 발사하면 캐릭터에게 돌아오는 힘에 의해 눈물이 돌아오지 않고 방 너머로 1~2바퀴 가로질러 나간다.\n＊ Compound Fracture, The Parasite, Cricket's Body : 눈물이 분할될 때 그 눈물들도 캐릭터를 향해 온다.\n＊ Dr. Fetus : 폭탄이 다시 캐릭터 쪽으로 돌아오므로 폭발 면역이 없거나 사거리가 길지 않으면 상성이 좋지 않다.\n＊ Epic Fetus : 거울 상의 효과를 무시한다.\n＊ Euthanasia : 안락사당해서 파열된 눈물들이 캐릭터 쪽으로 날아온다.\n＊ Flat Stone : 눈물이 통통 튀면서 캐릭터 쪽으로 다가온다.\n＊ Haemolacria : 눈물이 꽤 오랫동안 떠있는 채로 캐릭터에게 다가온다. 단 파열된 눈물은 평소대로 제각각 날아간다.\n＊ Ipecac : 구토제 눈물이 캐릭터에게 다가와서 상성이 좋지 않다. 도전 모드 7번 Suicide king이 이 두 가지를 기본으로 가지고 시작한다.\n＊ Lachryphagy : 눈물이 합쳐지는 동안 캐릭터를 따라오고 파열된 눈물들도 캐릭터를 따라온다.\n＊ A Lump of Coal : 체공시간이 길어지는 동안 눈물의 크기와 그 눈물의 대미지가 점점 증가한다.\n＊ Ludovico Technique : 효과가 없다. 다만 눈물 속도가 증가하기 때문에 눈물의 이동이 전보다 빨라진다.\n＊ Mom's Knife : 아이템 자체가 찌르고 돌아오는 것이기 때문에 효과가 없다.\n＊ 관통 효과가 있는 아이템들 : 여러 번 관통해도 처음 관통한 눈물에만 대미지 효과가 있다.\n＊ POP! : 눈물이 떨어지려면 눈물의 이동속도가 점점 줄어야 되는데 캐릭터를 따라가기 때문에 눈물이 떨어지지 않고 방안에 계속 띄울 수 있다.\n＊ Proptosis : 눈물이 돌아오지 않고 빠르게 줄어들면서 바닥으로 사라진다. 사거리도 매우 짧다.\n＊ Rubber Cement : 눈물이 바운싱 되면서 캐릭터를 쫓아온다.\n＊ Spoon Bender : 눈물이 적에게 가까우면 적에게 그렇지 않으면 캐릭터에게 돌아간다.\n＊ Strange Attractor : 구토제보다 더 무서운 자살조합. 몹들이 캐릭터에게 빠르게 접근한다.\n＊ Technology : 레이저가 캐릭터가 움직이는 반대방향으로 살짝 휘어져서 발사한다. 혈사보다는 나은 편.\n＊ Technology 2, Tech.5 : 2는 혈사와 똑같은 효과를, 5는 Technology와 똑같은 효과를 낸다. 다른 한쪽에서 나오는 눈물은 거울 상의 효과를 받는다.\n＊ Tech X : 거울 상의 스텟 효과만 가져온다.\n＊ Tiny Planet : 한 바퀴지만 거의 반 바퀴 수준까지만 돌고 멈춰있다가 눈물이 천천히 내려온다. 왔다 갔다 하면 눈물의 궤도가 커진다.\n＊ Trisagion : 하얀 가지같이 생긴 눈물을 발사한다. 눈물은 캐릭터와 가까운 쪽의 판정을 따르므로 나머지 부분은 도트딜로 계산된다.\n＊ Whip Worm 장신구 : 눈물이 너무 멀리 나가서 제대로 돌아오지 못한다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

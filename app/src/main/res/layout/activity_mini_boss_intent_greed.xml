@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mini_Boss_Intent_Greed"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/greed"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#615F5F"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Greed(탐욕)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/mini_boss_greed"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="등장 장소"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="Greed - 상점, 비밀방, Sheol/Cathedral, Chest/Dark Room"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Keeper에 몸통이 추가된 모습의 미니 보스. 다른 7대 죄악과는 달리 미니 보스방에서 출현하지 않는다.\n죽이면 다량의 돈을 드롭한다. 그리고 종종 Steam Sale도 드롭한다. 재밌는 것은 Super Greed가 오히려 일반 greed보다 상대하기 쉽다는 점인데, Greed는 세 개의 핏방울을 쏘는데 Super Greed는 네 개를 쏘기 때문에 그냥 마주보고 딜을 할 수 있기 때문이다.\n플레이어들이 가장 미워하는... 미니 보스일지도 모른다. 기대감에 가득 차서 열쇠 하나를 낭비해가며 상점의 문을 열었을때 이 녀석이 나온다면 상점의 교환기회 하나가 통째로 사라지기 때문. 게다가 탄을 쏘는게 매우 빠르고 전조가 없어서 순식간에 맞을 수 있다. 추가로 맞으면 체력뿐 아니라 동전까지 뺏겨서 혈압을 상승시킨다.\n\n다른 미니 보스와는 다르게 등장하는데 4층부터 해당 층에서 미니 보스방이 없으면 거의 99% 나온다고 봐도 되며 Greed 다음에 무조건 Super Greed가 나온다. 이후에는 더 이상 나오지 않는다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="보스 체력 및 패턴"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="* 체력 : 60 (+20)\n· Greed에게 피격 시 2~4개의 동전을 잃고, 1~3개의 동전을 흘리게 된다.\n· 패턴 1 : 아이작을 바라보는 쪽으로 3갈래의 핏방울을 발사한다.\n· 패턴 2 : 자신의 양 옆에 Hopper를 2마리 소환한다.\n· 처치 시 여러 개의 동전 또는 낮은 확률로 Steam Sale을 드랍한다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

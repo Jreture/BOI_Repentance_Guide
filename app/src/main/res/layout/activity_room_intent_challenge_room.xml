@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Room_Intent_Challenge_Room"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/challenge_room"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#474443"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Challenge Room(도전 방)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/room_challenge_room"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="일명 칼방. 지도 상에서 칼 모양으로 표시된다. 전 층에서 전체 체력(빨간 하트 + 소울/블랙 하트)이 최대 체력 이상인 상태에서 다음 스테이지 입장 시 생성된다. 조건과 무관하게 Basement/Cellar I에서는 생성되지 않는다.\n\n전층에서 생성 조건을 만족하여 도전 방을 보더라도 중간에 피격당해 체력이 줄어들었다면 도로 문이 닫힌다. 들어가면 보물 상자, 잠긴 보물 상자, 또는 아이템이 있으며 그걸 건드리면 문이 닫히고 3번에 걸쳐서 몬스터가 생성된다. 단, 파리가 나올 시 빨간 파리와 attack fly 가 동시에 나오는데 그 다음에는 한번만 더 소환된다. 모두 물리치면 OK. 대개 별로 대단한 아이템은 안나오는데 Womb 레벨 쯤 가면 꽤 좋은 아이템이 나오기도 한다. 대신 등장하는 몬스터도 보스급. 텔레포트 하는 타로카드나 아이템이 있다면 그냥 싸우지 않고 먹튀하는 것도 가능. 만일 X-Ray Vision을 갖고있으며 도전 방이 비밀 방과 연결된 상태라면 같은 방법으로 먹튀가 가능하다. 먹튀후 다시 들어와보면 몹은 모두 사라져있다.\n\n버그가 있다. 상자를 열거나 아이템을 먹는 행위로 문이 닫힐때 몹이 소환되기전에 ESC키를 누르고 대기하고 있으면 3번에 걸쳐서 나오는 몬스터를 한번에 전부 생성할수 있다.물론 이렇게 하면 한꺼번에 수많은 적을 상대해야 하므로 The Death 타로 카드가 있거나 그냥 막 상대해도 쓸어버릴 수 있을 정도로 충분히 강할 경우에 시도하도록 하자."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="버전별 변경점"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="리버스\n· 반드시 홀수층에서만 등장하며, 보물방 배열의 아이템이 등장하는 경우도 있고, 상자가 최대 3개까지 존재할 수 있으며, 이 중 단 하나라도 열 시 전투가 개시된다. 이 때 상자를 여는 행위 자체가 전투를 개시하는 신호가 되기 때문에, 텔레포트 성능을 가진 아이템이나 카드를 이용하여 먹튀를 할 때에는 반드시 상자를 모두 연 뒤에 쓰도록 하자. 먹튀 이후에도 열리지 않은 상자를 열면 다시 전투가 개시된다.\n· 도전방 아이템 배열이 삭제되었다.\n\n애프터버스\n· 보스 러시 방과는 달리 등장하는 몬스터들은 바뀌지 않았으나 웨이브 순서는 랜덤으로 바뀌었다. 또한 상자가 최대 4개까지도 등장할 수 있다.\n\n리펜던스\n· Womb부터 나오는 도전방에서도 일반 몬스터가 나올 수 있다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

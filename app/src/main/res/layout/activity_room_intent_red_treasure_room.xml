@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Room_Intent_Red_Treasure_Room"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/red_treasure_room"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#8F1313"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red_Treasure_Room(빨간 보물 방)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/room_red_treasure_room"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="빨간 방을 만들다 보면 특정한 빨간 방에 진입하자마자 비밀방이 열린 듯한 소리와 함께 한 면의 입구가 열려있는 것을 볼 수 있는데 해당 방을 진입하면 특급 비밀방 배열 아이템 중 하나를 얻을 수 있다. 위의 진입 아이템이 아니라도 역방향 The Moon 카드를 사용하면 특급 비밀 방으로 진입할 수 있다.\n\n이 방도 엄연한 비밀방 취급이기 때문에 이 방에서 Red Key를 써서 빨간 방을 만들어도 방문이 열리지 않는다. 빨간 방을 만든 후 폭탄까지 써야 비로소 열린다.\n\n진행 상 빨간 방이나 빨간 비밀방으로 착각하기 쉬운데 특급 비밀방은 빨간 방이 절대 아니며 반대로 빨간 방도 특급 비밀방이 아니다. 이 방은 빨간 방과는 달리 스테이지 진입 시 생성되기 때문이다. 지도 상에서는 빨간색 물음표 + 회색 배경으로 되어 있으며 이 방은 Red Key같은 아이템으로 절대로 '생성'할 수 없는 방이기 때문.\n하지만 이 방은 Teleport 2.0을 들고 있어도, 절대로 이 방으로 텔레포트하여 입장할 수는 없다. Cracked Orb로 위치를 알게 되어도 불가능하다. 오직 Red Key로 직접 찾거나, 역방향 The Moon으로만 진입이 가능하다.\n\n방의 배경은 스테이지 상관 없이 Home 스테이지의 배경으로 고정된다.\n\n특급 비밀 방은 절대로 일반적인 방과 인접해있지 않으며, 일반 비밀 방처럼 방 3개가 서로 인접한 위치에 빨간 방을 만들면 바로 옆 빈 공간에 있을 확률이 매우 높다. 만약 그러한 지형이 존재하지 않는다면 상점이나 희생방 등 특별한 방과 사선으로 인접해있는 경우가 많다.\n한 유저가 밝힌 바에 따르면 특급 비밀 방 생성 규칙은 다음과 같다. 링크의 그림을 보면 이해하기 쉽다.\n\n· 특급 비밀 방은 반드시 지도 상에서 정확히 한 칸을 간격에 둔다.\n· 특급 비밀 방의 주변 8칸의 방 중 최소 한 면은 반드시 특수 방과 연결되어 있고 나머지 한 면은 반드시 지도 상에 다른 방과 연결되어 있다.\n· 특급 비밀 방은 반드시 상점과 보물 방의 위치가 정해지고 난 뒤에 생성된다.\n· 이 때문에 현재는 버그로 보물 방과 상점이 없는 스테이지에서는 두번째 규칙이 적용되지 않을 가능성이 있다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

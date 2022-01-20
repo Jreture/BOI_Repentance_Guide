@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transformation_Intent_Beelzebub"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/beelzebub"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#1B1A1A"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beelzebub(벨제부브)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#DF371111"
+                android:scaleType="centerInside"
+                android:src="@drawable/transformation_beelzebub"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="56dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설명"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="리버스 본편에 추가된 변신세트로 파리 관련 아이템을 3개 이상 획득 시 변신한다. 날아다닐 수 있으며 작은 파리들은 파란색 자폭 파리로 바뀌고 다른 파리들은 영구적으로 매혹된다."
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#90464946">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="세트 관련 아이템"
+                android:textColor="#E2420808"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="(???)'s only friend(???의 하나뿐인 친구)\nBBF(크고 아름다운파리)\nBest Bud(최고의 짝꿍)\nBig Fan(왕팬)\nDistant Admiration(짝사랑)\nForever Alone(영원한 솔로)\nHalo of Flies(파리 떼)\nHive Mind(군체 의식)\nInfestation(감염)\nThe Mulligan(뮬리건)\nSkatole(스카톨)\nSmart Fly(똑똑한 파리)\nAngry Fly(화난 파리)\nFriend Zone(사랑과 우정 사이)\nLost Fly(길잃은 파리)\nPapa Fly(파리 아저씨)\nObsessed Fan(홀려버린 추종자)\nJar of Flies(파리 담은 병)\nPlum Flute(플럼 피리)\nParasitoid(기생자)\nYO LISTEN!(야 들어봐!)\nBot Fly(로봇 파리)\nFruity Plum\nPsy Fly(초능력 파리)\nThe Swarm(군단)"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

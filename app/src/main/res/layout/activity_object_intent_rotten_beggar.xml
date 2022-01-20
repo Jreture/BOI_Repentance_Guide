@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Object_Intent_Rotten_Beggar"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/rotten_beggar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#274320"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rotten Beggar(썩은 거지)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/object_rotten_beggar"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="리펜던스에 추가된 거지. 알트 아폴리온으로 메가 사탄을 클리어하면 언락된다. 돈을 주다 보면 방귀를 뀌거나 아군 자폭 파리/거미, 뼈 하트, 썩은 하트, 일부 장신구를 드랍하며, 극히 낮은 확률로 액티브 / 패시브 아이템을 드랍하고 사라진다. 폭탄으로 죽일 경우 작은 구더기를 몇 마리 스폰시키며, 썩은 하트를 드랍할 확률이 있다. 썩은 거지 배열은 Bob's 아이템들과 일부 썩은 아이템들로 구성되어 있다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

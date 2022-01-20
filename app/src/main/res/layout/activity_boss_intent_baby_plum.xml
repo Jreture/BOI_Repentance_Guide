@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Boss_Intent_baby_plum"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/baby_plum"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#AE3535"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Boss - Baby Plum(아기 플럼)"
+            android:textColor="#040404"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DF371111"
+        android:scaleType="centerInside"
+        android:src="@drawable/boss_baby_plum"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="등장 장소"
+        android:textColor="#E2420808"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:gravity="center"
+    android:text="보스 방(단독) - Basement/Cellar/Burning Basement\nBasement(Home 루트), Cathedral, Chest"
+    android:textSize="14sp"
+    android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        android:textColor="#E2420808"
+        android:textSize="20dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="left"
+        android:text="리펜턴스 보스답게 초반 보스치고는 까다로운 편이지만 패턴만 익히면 어렵지 않게 클리어할 수 있다.\n\n스테이지 보스로 등장했을 때, 공격하지 않고 계속 버티면 Baby Plum이 손을 흔들고 떠나면서 액티브 아이템 Plum Flute가 해금되며, 물리치든 떠나게 만드든 보스전을 10번 완료하면 패시브 아이템 Fruity Plum이 해금된다. 다만 보스 방이 아닌 곳에서 만날 경우 계속 버텨도 떠나지 않는다.\n\n액티브 아이템 'Plum Flute'를 사용하면 이 녀석이 나타나서 후술할 패턴 세 가지를 차례대로 시전한 뒤 떠난다. 흩뿌리는 탄막의 양이 장난이 아닌 만큼 잡몹 처리는 물론이고 보스에게도 막대한 피해를 입힐 수 있다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#90464946"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보스 체력 및 패턴"
+        android:textColor="#E2420808"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="left"
+        android:text="* 체력 : 234 (100% / +0)*\n패턴 1 : 제자리에서 땅을 굴러 그 자리에 피웅덩이를 생성하고 원 모양으로 8갈래와 14갈래의 핏방울을 동시에 발사한다. 피웅덩이는 일정 시간이 지나면 사라진다.\n* 패턴 2 : 플레이어를 향해 짧게 돌진하며 12갈래로 핏방울을 발사한다.핏방울은 원을 그리듯이 차례대로 발사된다.\n* 패턴 3 : 입에서 핏방울들을 계속 흩뿌리면서 대각선 방향으로 빠르게 돌아다닌다. 벽에 닿을때마다 이동하는 각도가 바뀐다.* 패턴 4 :처치 시 원 모양으로 10갈래의 핏방울이 발사된다."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>
